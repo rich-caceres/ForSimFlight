@@ -7,12 +7,19 @@ using namespace std;
 int main()
 {
     int num = 5;
+    int userNum = 0;
+
     cout << "Hello World!\n";
     cout << "Working with C++ is fun\nmy number is equal to " << num << "\nnum can also be printed with another statement like so: \n";
     cout << num;
     cout << "\nLets get user input, please enter your age:\n";
     cin >> num;
     cout << "Your age is " << num << " thats pretty awesome. Thanks for telling me!";
+    cout << "now enter a number so that C++ can do math";  
+    cin >> userNum;
+    cout << userNum << " + " << num << " = " << num + userNum;
+    
+    
     return 0;
 }
 
