@@ -1,8 +1,9 @@
 // HelloWorldFirstApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
 
 #include <iostream>
 #include <string>
+#include <cmath>
 int main()
 {
     int num = 5;
@@ -11,23 +12,28 @@ int main()
     std::string lastName = "";
     std::string fullName = "";
 
+    //printing to console with cout
     std::cout << "Hello World!\n";
     std::cout << "Working with C++ is fun\nmy number is equal to " << num << "\nnum can also be printed with another statement like so: \n";
     std::cout << num;
+    //Working with input from user
     std::cout << "\nLets get user input, please enter your age:\n";
     std::cin >> num;
     std::cout << "Your age is " << num << " thats pretty awesome. Thanks for telling me!";
     std::cout << "now enter a number so that C++ can do math\n";  
     std::cin >> userNum;
+    //Doing math with c++ along with user input
     std::cout << userNum << " + " << num << " = " << num + userNum;
+    std::cout << "C++ can also find the maximum and minimum of these numbers starting with max:\n" << std::max(num, userNum) << "\nNow minimum:\n" << std::min(num, userNum); 
     
+    //Working with string in C++
     std::cout << "\nOk, let's have C++ get your name. Please enter your first name:\n ";
     std::cin >> firstName;
     std::cout << "enter your last name:\n ";
     std::cin >> lastName;
     std::cout << "Hello " << firstName.append(" ").append(lastName) << ", it's very nice to meet you!\n";
     std::cout << "There is a better way to get your name, this time I would like you to enter your entire name on one line: \n";
-    std::cin.get();
+    std::cin.get(); //Forces C++ to jump lines because we have been using cin already
     getline(std::cin, fullName);
     std::cout << "Your full name is: " << fullName;
 
