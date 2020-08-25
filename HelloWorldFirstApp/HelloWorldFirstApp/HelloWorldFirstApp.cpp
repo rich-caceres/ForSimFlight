@@ -3,31 +3,33 @@
 
 #include <iostream>
 #include <string>
-using namespace std;
-
 int main()
 {
     int num = 5;
     int userNum = 0;
-    string firstName = "";
-    string lastName = "";
+    std::string firstName = "";
+    std::string lastName = "";
+    std::string fullName = "";
 
-
-    cout << "Hello World!\n";
-    cout << "Working with C++ is fun\nmy number is equal to " << num << "\nnum can also be printed with another statement like so: \n";
-    cout << num;
-    cout << "\nLets get user input, please enter your age:\n";
-    cin >> num;
-    cout << "Your age is " << num << " thats pretty awesome. Thanks for telling me!";
-    cout << "now enter a number so that C++ can do math\n";  
-    cin >> userNum;
-    cout << userNum << " + " << num << " = " << num + userNum;
+    std::cout << "Hello World!\n";
+    std::cout << "Working with C++ is fun\nmy number is equal to " << num << "\nnum can also be printed with another statement like so: \n";
+    std::cout << num;
+    std::cout << "\nLets get user input, please enter your age:\n";
+    std::cin >> num;
+    std::cout << "Your age is " << num << " thats pretty awesome. Thanks for telling me!";
+    std::cout << "now enter a number so that C++ can do math\n";  
+    std::cin >> userNum;
+    std::cout << userNum << " + " << num << " = " << num + userNum;
     
-    cout << "\nOk, let's have C++ get your name. Please enter your first name:\n ";
-    cin >> firstName;
-    cout << "enter your last name:\n ";
-    cin >> lastName;
-    cout << "Hello " << firstName.append(" ").append(lastName) << ", it's very nice to meet you!";
+    std::cout << "\nOk, let's have C++ get your name. Please enter your first name:\n ";
+    std::cin >> firstName;
+    std::cout << "enter your last name:\n ";
+    std::cin >> lastName;
+    std::cout << "Hello " << firstName.append(" ").append(lastName) << ", it's very nice to meet you!\n";
+    std::cout << "There is a better way to get your name, this time I would like you to enter your entire name on one line: \n";
+    std::cin.get();
+    getline(std::cin, fullName);
+    std::cout << "Your full name is: " << fullName;
 
     return 0;
 }
