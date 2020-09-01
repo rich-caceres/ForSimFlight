@@ -5,6 +5,17 @@
 #include <string>
 #include <cmath>
 
+//functions have to be at the top of the stack at all times to run the functon without errors!
+int mathCompletion(int num, int userNum) {
+
+    int result = 0;
+
+    result = num + userNum;
+
+    return result;
+}
+
+
 //using a function to do the same work in main, this is a much better way to seperate functions!
 void NameFunction() {
 
@@ -21,12 +32,12 @@ void NameFunction() {
     //Working with input from user
     std::cout << "\nLets get user input, please enter your age:\n";
     std::cin >> num;
-    std::cout << "Your age is " << num << " thats pretty awesome. Thanks for telling me!";
-    std::cout << "\nnow enter a number so that C++ can do math\n";
+    std::cout << "Your age is " << num << " thats pretty awesome. Thanks for telling me!\n";
+    std::cout << "Now enter a number so that C++ can do math\n";
     std::cin >> userNum;
     //Doing math with c++ along with user input
-    std::cout << userNum << " + " << num << " = " << num + userNum;
-    std::cout << "\nC++ can also find the maximum and minimum of these numbers starting with max:\n" << std::max(num, userNum) << "\nNow minimum:\n" << std::min(num, userNum);
+    std::cout << userNum << " + " << num << " = " << mathCompletion(num, userNum) << "\n";
+    std::cout << "C++ can also find the maximum and minimum of these numbers starting with max:\n" << std::max(num, userNum) << "\nNow minimum:\n" << std::min(num, userNum);
 
     //Working with string in C++
     std::cout << "\nOk, let's have C++ get your name. Please enter your first name:\n ";
@@ -40,6 +51,7 @@ void NameFunction() {
     std::cout << "Your full name is: " << fullName;
 
 }
+
 
 int main()
 {
