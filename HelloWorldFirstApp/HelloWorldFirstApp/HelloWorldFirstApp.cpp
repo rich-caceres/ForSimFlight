@@ -6,6 +6,7 @@
 #include <cmath>
 
 
+
 std::string getName() {
     std::string fullName;
 
@@ -63,10 +64,23 @@ void NameFunction() {
 
 }
 
+
 int main()
 {
 
-    NameFunction();
+    char answer= ' ';
+
+    //NameFunction();
+    
+
+    std::cout << "Would you like to play the number guessing game?\n";
+    std::cin >> answer;
+
+    while(answer == 'y'){
+        
+        std::cout << "Currently in while loop, type any other character to get out of it.\n" ; 
+        std::cin >> answer; 
+    }
     return 0;
 }
 
