@@ -6,6 +6,16 @@
 #include <cmath>
 
 
+
+std::string getName() {
+    std::string fullName;
+
+    getline(std::cin, fullName);
+
+    return fullName;
+
+}
+
 //functions have to be at the top of the stack at all times to run the functon without errors!
 int mathCompletion(int num, int userNum) {
 
@@ -49,15 +59,28 @@ void NameFunction() {
     std::cout << "Hello " << firstName.append(" ").append(lastName) << ", it's very nice to meet you!\n";
     std::cout << "There is a better way to get your name, this time I would like you to enter your entire name on one line: \n";
     std::cin.get(); //Forces C++ to jump lines because we have been using cin already
-    getline(std::cin, fullName);
+    fullName = getName();
     std::cout << "Your full name is: " << fullName;
 
 }
 
+
 int main()
 {
 
-    NameFunction();
+    char answer= ' ';
+
+    //NameFunction();
+    
+
+    std::cout << "Would you like to play the number guessing game?\n";
+    std::cin >> answer;
+
+    while(answer == 'y'){
+        
+        std::cout << "Currently in while loop, type any other character to get out of it.\n" ; 
+        std::cin >> answer; 
+    }
     return 0;
 }
 
