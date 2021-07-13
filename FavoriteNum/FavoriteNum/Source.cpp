@@ -3,13 +3,7 @@
 #include <vector>;
 
 void MoneyChallenge() {
-	int centsInteger{ 0 };
-	int total{ 0 };
-	int dollars{ 0 };
-	int quarters{ 0 };
-	int dimes{ 0 };
-	int nickles{ 0 };
-	int pennies{ 0 };
+	int centsInteger{ 0 }, total{ 0 }, dollars{ 0 }, quarters{ 0 }, dimes{ 0 },nickles{ 0 }, pennies{ 0 };
 	const int DOLLAR{ 100 };
 	const int QUARTER{ 25 };
 	const int DIME{ 10 };
