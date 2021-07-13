@@ -84,6 +84,12 @@ void multiply(int number)
 	std::cout << "Your favorite number * 2 is equal to: " + std::to_string(number);
 }
 
+void MenuOption() {
+	char option{ ' ' };
+
+	std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nQ- Quit\n\nEnter your choice: ";
+}
+
 int main()
 {
 	//int yourFavNum = 0;
@@ -98,6 +104,8 @@ int main()
 	//=================================================================================
 	//MoneyChallenge();
 	//=================================================================================
+	MenuOption();
+
 	return 0;
 }
 
