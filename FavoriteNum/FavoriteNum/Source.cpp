@@ -113,6 +113,12 @@ void MenuOption() {
 		case 'm':
 		case 'M':
 			std::cout << "This gets Mean numbers!";
+			int result{ 0 };
+			for (int vec_item : vec) {
+				result = result + vec_item;
+			}
+			result = result / vec.size();
+			std::cout << "The mean of all the numbers in the vector is " << result;
 			break;
 		case 's':
 		case 'S':
