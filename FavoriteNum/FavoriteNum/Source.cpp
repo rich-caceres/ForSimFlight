@@ -92,7 +92,7 @@ void MenuOption() {
 
 	while (!quit) {
 		char option{ ' ' };
-		int num{ 0 };
+		int num{ 0 }, smallest{ 0 }, largest{ 0 }, temp{0};
 		float result{ 0 };
 		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nQ- Quit\n\nEnter your choice: ";
 		std::cin >> option;
@@ -115,7 +115,7 @@ void MenuOption() {
 			break;
 		case 'm':
 		case 'M':
-			std::cout << "This gets Mean numbers!";
+			std::cout << "This gets Mean numbers!\n";
 			for (int vec_item : vec) {
 				result = result + vec_item;
 			}
@@ -124,18 +124,30 @@ void MenuOption() {
 			break;
 		case 's':
 		case 'S':
-			std::cout << "This gets smallest number!";
+			std::cout << "This gets smallest number!\n";
+			for (int vec_item : vec) {
+				if (vec_item < smallest || smallest == 0) {
+					smallest = vec_item;
+				}
+			}
+			std::cout << "The smallest number in the vector is: " << smallest << std::endl;
 			break;
 		case 'l':
 		case 'L':
-			std::cout << "This gets Largest numbers!";
+			std::cout << "This gets Largest numbers!\n";
+			for (int vec_item : vec) {
+				if (vec_item > largest || largest == 0) {
+					largest = vec_item;
+				}
+			}
+			std::cout << "The largest number in the vector is: " << largest << std::endl;
 			break;
 		case 'q':
 		case 'Q':
 			std::cout << "This quits program!";
 			quit = true;
 			break;
-		default: std::cout << "Invalid input, please try again.";
+		default: std::cout << "Invalid input, please try again.\n";
 		}
 	}
 	
