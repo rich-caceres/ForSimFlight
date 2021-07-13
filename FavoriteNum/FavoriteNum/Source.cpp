@@ -153,6 +153,32 @@ void MenuOption() {
 	
 }
 
+void SecretMessage() {
+
+	std::string message{"charles"};
+	std::vector<char> alphabet{'c','h','d','e'};
+	std::vector<char> encrypt{ '=','+','$','!' };
+
+	for (size_t i{ 0 }; i < message.size(); i++) {
+		for (size_t j{ 0 }; j < alphabet.size(); j++) {
+				if (message.at(i) == alphabet.at(j)) {
+					message.at(i) = encrypt.at(j);
+			}
+		}
+	}
+	std::cout <<"Here is the encrypted message: "<< message<<std::endl;
+
+	for (size_t i{ 0 }; i < message.size(); i++) {
+		for (size_t j{ 0 }; j < encrypt.size(); j++) {
+			if (message.at(i) == encrypt.at(j)) {
+				message.at(i) = alphabet.at(j);
+			}
+		}
+	}
+	std::cout << "Here is the de-crypted message: " << message << std::endl;
+
+}
+
 int main()
 {
 	//int yourFavNum = 0;
@@ -167,8 +193,9 @@ int main()
 	//=================================================================================
 	//MoneyChallenge();
 	//=================================================================================
-	MenuOption();
-
+	//MenuOption();
+	//=================================================================================
+	SecretMessage();
 	return 0;
 }
 
