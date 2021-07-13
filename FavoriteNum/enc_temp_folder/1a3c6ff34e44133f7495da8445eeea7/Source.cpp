@@ -104,14 +104,13 @@ void MenuOption() {
 			for (int vec_item : vec) {
 				std::cout << vec_item << " ";
 			}
-			std::cout<< std::endl;
 			break;
 		case 'a':
 		case 'A':
 			std::cout << "Please enter the number to add: ";
 			std::cin >> num;
 			vec.push_back(num);
-			std::cout << "You added " << num << " to the list!"<<std::endl;
+			std::cout << "You added " << num << " to the list!";
 			break;
 		case 'm':
 		case 'M':
@@ -120,7 +119,7 @@ void MenuOption() {
 				result = result + vec_item;
 			}
 			result = result / vec.size();
-			std::cout << "The mean of all the numbers in the vector is " << result<<std::endl;
+			std::cout << "The mean of all the numbers in the vector is " << result;
 			break;
 		case 's':
 		case 'S':
