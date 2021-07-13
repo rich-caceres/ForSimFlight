@@ -87,6 +87,8 @@ void multiply(int number)
 void MenuOption() {
 	
 	bool quit{false};
+	std::vector<int> vec{};
+
 	while (!quit) {
 		char option{ ' ' };
 		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nQ- Quit\n\nEnter your choice: ";
@@ -95,11 +97,18 @@ void MenuOption() {
 		switch (option) {
 		case 'p':
 		case 'P':
-			std::cout << "This prints numbers!";
+			std::cout << "You selected to print all numbers!";
+			for (int vec_item : vec) {
+				std::cout << vec_item << " ";
+			}
 			break;
 		case 'a':
 		case 'A':
-			std::cout << "This adds numbers!";
+			int num{ 0 };
+			std::cout << "Please enter the number to add: ";
+			std::cin >> num;
+			vec.push_back(num);
+			std::cout << "You added " << num << " to the list!";
 			break;
 		case 'm':
 		case 'M':
