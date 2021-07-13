@@ -85,9 +85,43 @@ void multiply(int number)
 }
 
 void MenuOption() {
-	char option{ ' ' };
+	
+	bool quit{false};
+	while (!quit) {
+		char option{ ' ' };
+		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nQ- Quit\n\nEnter your choice: ";
+		std::cin >> option;
 
-	std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nQ- Quit\n\nEnter your choice: ";
+		switch (option) {
+		case 'p':
+		case 'P':
+			std::cout << "This prints numbers!";
+			break;
+		case 'a':
+		case 'A':
+			std::cout << "This adds numbers!";
+			break;
+		case 'm':
+		case 'M':
+			std::cout << "This gets Mean numbers!";
+			break;
+		case 's':
+		case 'S':
+			std::cout << "This gets smallest number!";
+			break;
+		case 'l':
+		case 'L':
+			std::cout << "This gets Largest numbers!";
+			break;
+		case 'q':
+		case 'Q':
+			std::cout << "This quits program!";
+			quit = true;
+			break;
+		default: std::cout << "Invalid input, please try again.";
+		}
+	}
+	
 }
 
 int main()
