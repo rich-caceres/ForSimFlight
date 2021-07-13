@@ -155,9 +155,12 @@ void MenuOption() {
 
 void SecretMessage() {
 
-	std::string message{"charles"};
+	std::string message{};
 	std::vector<char> alphabet{'c','h','d','e'};
 	std::vector<char> encrypt{ '=','+','$','!' };
+
+	std::cout << "Enter a message you wish to encrypt:" << std::endl;
+	std::getline(std::cin, message);
 
 	for (size_t i{ 0 }; i < message.size(); i++) {
 		for (size_t j{ 0 }; j < alphabet.size(); j++) {
