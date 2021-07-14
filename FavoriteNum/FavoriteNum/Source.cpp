@@ -1,6 +1,8 @@
 #include <iostream>;
 #include <string>;
 #include <vector>;
+#include <cmath>;
+#include <cstdlib>
 
 void MoneyChallenge() {
 	int centsInteger{ 0 }, total{ 0 }, dollars{ 0 }, quarters{ 0 }, dimes{ 0 },nickles{ 0 }, pennies{ 0 };
@@ -182,6 +184,11 @@ void LetterPyramid() {
 	}
 }
 
+void MathWithCpp() {
+
+
+}
+
 void SecretMessage() {
 
 	std::string message{};
@@ -231,7 +238,9 @@ int main()
 	//=================================================================================
 	//SecretMessage();
 	//=================================================================================
-	LetterPyramid();
+	//LetterPyramid();
+	//=================================================================================
+	MathWithCpp();
 	return 0;
 }
 
