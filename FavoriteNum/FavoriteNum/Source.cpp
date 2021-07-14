@@ -153,6 +153,35 @@ void MenuOption() {
 	
 }
 
+void LetterPyramid() {
+	std::string input{ "abc" };
+
+	size_t numLetters = input.length();
+
+	int position{ 0 };
+
+	for (char c: input) {
+		size_t numSpaces = numLetters - position;
+		while (numSpaces> 0){	
+			std::cout << " ";
+			--numSpaces;
+		}
+		for (size_t i = 0; i < position; i++) {
+			std::wcout << input.at(i);
+		}
+
+		std::cout << c;
+		
+		for (int i = position - 1; i >= 0; --i) {
+			auto charAt = static_cast<size_t>(i);
+			std::cout << input.at(charAt);
+		}
+
+		std::cout << std::endl;
+		++position;
+	}
+}
+
 void SecretMessage() {
 
 	std::string message{};
@@ -200,7 +229,9 @@ int main()
 	//=================================================================================
 	//MenuOption();
 	//=================================================================================
-	SecretMessage();
+	//SecretMessage();
+	//=================================================================================
+	LetterPyramid();
 	return 0;
 }
 
