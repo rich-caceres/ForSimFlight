@@ -1,3 +1,4 @@
+#include "Header.h"
 #include <iostream>;
 #include <string>;
 #include <vector>;
@@ -5,9 +6,34 @@
 #include <cstdlib>;
 #include <ctime>;
 
+using namespace head;
+
+int main()
+{
+	//int yourFavNum = 0;
+
+	//std::cout << "please enter your favorite number:";
+	//std::cin >> yourFavNum;
+
+	//std::cout << "Your favorite number is: " + std::to_string(yourFavNum) << std::endl;
+	//multiply(yourFavNum);
+	//=================================================================================
+	//vectorFun();
+	//=================================================================================
+	//MoneyChallenge();
+	//=================================================================================
+	//MenuOption();
+	//=================================================================================
+	//SecretMessage();
+	//=================================================================================
+	//LetterPyramid();
+	//=================================================================================
+	MathWithCpp();
+	return 0;
+}
 
 void MoneyChallenge() {
-	int centsInteger{ 0 }, total{ 0 }, dollars{ 0 }, quarters{ 0 }, dimes{ 0 },nickles{ 0 }, pennies{ 0 };
+	int centsInteger{ 0 }, total{ 0 }, dollars{ 0 }, quarters{ 0 }, dimes{ 0 }, nickles{ 0 }, pennies{ 0 };
 	const int DOLLAR{ 100 };
 	const int QUARTER{ 25 };
 	const int DIME{ 10 };
@@ -21,7 +47,7 @@ void MoneyChallenge() {
 
 	quarters = total / QUARTER;
 	total %= QUARTER;
-	
+
 	dimes = total / DIME;
 	total %= DIME;
 
@@ -31,11 +57,11 @@ void MoneyChallenge() {
 	pennies = total;
 
 	std::cout << "You can provide this change as follows:\n"
-			<< "Dollars: " << dollars
-			<<"\nQuarters: " << quarters
-			<<"\nDimes: " << dimes
-			<<"\nNickles: " << nickles
-			<<"\nPennies: " << pennies;
+		<< "Dollars: " << dollars
+		<< "\nQuarters: " << quarters
+		<< "\nDimes: " << dimes
+		<< "\nNickles: " << nickles
+		<< "\nPennies: " << pennies;
 }
 
 void vectorFun() {
@@ -45,14 +71,14 @@ void vectorFun() {
 
 	vector1.push_back(10);
 	vector1.push_back(20);
-	std::cout << "These are the results from vector1:\n" ;
+	std::cout << "These are the results from vector1:\n";
 	for (int i = 0; i < vector1.size(); i++) {
 		std::cout << vector1.at(i) << "\n";
 	}
 
 	vector2.push_back(100);
 	vector2.push_back(200);
-	
+
 	std::cout << "These are the results from vector2:\n";
 	for (int i = 0; i < vector2.size(); i++) {
 		std::cout << vector2.at(i) << "\n";
@@ -62,9 +88,9 @@ void vectorFun() {
 	vector_2d.push_back(vector2);
 
 	std::cout << "These are the results from vector_2d:\n";
-	for (std::vector<int> vect:vector_2d) {
-		for(int i = 0; i < vect.size(); i++)
-		std::cout << vect.at(i) << "\n";
+	for (std::vector<int> vect : vector_2d) {
+		for (int i = 0; i < vect.size(); i++)
+			std::cout << vect.at(i) << "\n";
 	}
 
 	vector1.at(0) = 1000;
@@ -89,10 +115,10 @@ void multiply(int number)
 }
 
 void MenuOption() {
-	
-	bool quit{false};
+
+	bool quit{ false };
 	std::vector<int> vec{};
-	
+
 
 	while (!quit) {
 		char option{ ' ' };
@@ -108,14 +134,14 @@ void MenuOption() {
 			for (int vec_item : vec) {
 				std::cout << vec_item << " ";
 			}
-			std::cout<< std::endl;
+			std::cout << std::endl;
 			break;
 		case 'a':
 		case 'A':
 			std::cout << "Please enter the number to add: ";
 			std::cin >> num;
 			vec.push_back(num);
-			std::cout << "You added " << num << " to the list!"<<std::endl;
+			std::cout << "You added " << num << " to the list!" << std::endl;
 			break;
 		case 'm':
 		case 'M':
@@ -124,7 +150,7 @@ void MenuOption() {
 				result = result + vec_item;
 			}
 			result = result / vec.size();
-			std::cout << "The mean of all the numbers in the vector is " << result<<std::endl;
+			std::cout << "The mean of all the numbers in the vector is " << result << std::endl;
 			break;
 		case 's':
 		case 'S':
@@ -154,7 +180,7 @@ void MenuOption() {
 		default: std::cout << "Invalid input, please try again.\n";
 		}
 	}
-	
+
 }
 
 void LetterPyramid() {
@@ -167,9 +193,9 @@ void LetterPyramid() {
 
 	int position{ 0 };
 
-	for (char c: input) {
+	for (char c : input) {
 		size_t numSpaces = numLetters - position;
-		while (numSpaces> 0){	
+		while (numSpaces > 0) {
 			std::cout << " ";
 			--numSpaces;
 		}
@@ -178,7 +204,7 @@ void LetterPyramid() {
 		}
 
 		std::cout << c;
-		
+
 		for (int i = position - 1; i >= 0; --i) {
 			auto charAt = static_cast<size_t>(i);
 			std::cout << input.at(charAt);
@@ -197,7 +223,7 @@ void MathWithCpp() {
 void SecretMessage() {
 
 	std::string message{};
-	std::string alphabet{"abcdefghijklmnopqrstuvwxyz "};
+	std::string alphabet{ "abcdefghijklmnopqrstuvwxyz " };
 	std::string encrypt{ "=+$!^&.()_+=-/*8+?<>6][5210" };
 	std::string encryptedMessage{};
 
@@ -207,12 +233,12 @@ void SecretMessage() {
 
 	for (size_t i{ 0 }; i < message.size(); i++) {
 		for (size_t j{ 0 }; j < alphabet.size(); j++) {
-				if (message.at(i) == alphabet.at(j)) {
-					message.at(i) = encrypt.at(j);
+			if (message.at(i) == alphabet.at(j)) {
+				message.at(i) = encrypt.at(j);
 			}
 		}
 	}
-	std::cout <<"Here is the encrypted message: "<< message<<std::endl;
+	std::cout << "Here is the encrypted message: " << message << std::endl;
 
 	for (size_t i{ 0 }; i < message.size(); i++) {
 		for (size_t j{ 0 }; j < encrypt.size(); j++) {
@@ -224,28 +250,3 @@ void SecretMessage() {
 	std::cout << "Here is the de-crypted message: " << message << std::endl;
 
 }
-
-int main()
-{
-	//int yourFavNum = 0;
-
-	//std::cout << "please enter your favorite number:";
-	//std::cin >> yourFavNum;
-
-	//std::cout << "Your favorite number is: " + std::to_string(yourFavNum) << std::endl;
-	//multiply(yourFavNum);
-	//=================================================================================
-	//vectorFun();
-	//=================================================================================
-	//MoneyChallenge();
-	//=================================================================================
-	//MenuOption();
-	//=================================================================================
-	//SecretMessage();
-	//=================================================================================
-	//LetterPyramid();
-	//=================================================================================
-	MathWithCpp();
-	return 0;
-}
-
