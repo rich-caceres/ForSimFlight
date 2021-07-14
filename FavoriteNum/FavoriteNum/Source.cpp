@@ -5,6 +5,7 @@
 #include <cstdlib>;
 #include <ctime>;
 
+
 void MoneyChallenge() {
 	int centsInteger{ 0 }, total{ 0 }, dollars{ 0 }, quarters{ 0 }, dimes{ 0 },nickles{ 0 }, pennies{ 0 };
 	const int DOLLAR{ 100 };
