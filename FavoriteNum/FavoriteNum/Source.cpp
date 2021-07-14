@@ -156,7 +156,10 @@ void MenuOption() {
 }
 
 void LetterPyramid() {
-	std::string input{ "abc" };
+	std::string input{};
+
+	std::cout << "Enter various letters or characters to have C++ create a pyramid: ";
+	std::cin >> input;
 
 	size_t numLetters = input.length();
 
