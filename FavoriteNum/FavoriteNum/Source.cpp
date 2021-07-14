@@ -8,6 +8,19 @@
 
 using namespace head;
 
+unsigned long long fibonacci(unsigned long long n) {
+	if (n <= 1) 
+		return n;
+	
+	return fibonacci(n - 1) + fibonacci(n - 2);
+}
+unsigned long long factorial(unsigned long long n) {
+	if (n == 0) 
+		return 1;
+
+	return n * factorial(n - 1);
+}
+
 int main()
 {
 	//int yourFavNum = 0;
@@ -28,7 +41,11 @@ int main()
 	//=================================================================================
 	//LetterPyramid();
 	//=================================================================================
-	MathWithCpp();
+	//MathWithCpp();
+	//=================================================================================
+	//std::cout<<fibonacci(20);
+	//=================================================================================
+	std::cout << factorial(1);
 	return 0;
 }
 
@@ -214,10 +231,8 @@ void LetterPyramid() {
 		++position;
 	}
 }
-
-void MathWithCpp() {
-
-
+void MathWithCpp(){
+	std::cout << "nothing here yet";
 }
 
 void SecretMessage() {
