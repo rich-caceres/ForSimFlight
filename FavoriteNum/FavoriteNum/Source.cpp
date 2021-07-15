@@ -15,8 +15,17 @@
 #include <ctime>;
 
 using namespace head;
-
-
+void MoneyChallenge();
+void vectorFun();
+void multiply(int number);
+void MenuOption();
+void LetterPyramid();
+void MathWithCpp();
+void SecretMessage();
+void FavoriteNum();
+void Pointers();
+unsigned long long fibonacci(unsigned long long n);
+unsigned long long factorial(unsigned long long n);
 
 int main()
 {
@@ -32,12 +41,23 @@ int main()
 	//=================================================================================
 	//LetterPyramid();
 	//=================================================================================
-	//MathWithCpp();
+	MathWithCpp();
 	//=================================================================================
 	//std::cout<<fibonacci(20);
 	//=================================================================================
 	//std::cout << factorial(1);
+	//=================================================================================
+	Pointers();
 	return 0;
+}
+
+void Pointers() {
+	int *int_ptr{ nullptr };
+	int num{ 10 };
+
+	int_ptr = &num;
+
+	std::cout << *int_ptr;
 }
 
 void FavoriteNum() {
@@ -47,7 +67,7 @@ void FavoriteNum() {
 	std::cin >> yourFavNum;
 
 	std::cout << "Your favorite number is: " + std::to_string(yourFavNum) << std::endl;
-	multiply(yourFavNum);
+	//multiply(yourFavNum);
 }
 
 unsigned long long fibonacci(unsigned long long n) {

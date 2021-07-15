@@ -12,6 +12,7 @@ namespace head
 		void MathWithCpp();
 		void SecretMessage();
 		void FavoriteNum();
+		void Pointers();
 		unsigned long long fibonacci(unsigned long long n);
 		unsigned long long factorial(unsigned long long n);
 	};
