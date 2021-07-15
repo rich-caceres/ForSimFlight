@@ -11,6 +11,7 @@ namespace head
 		void LetterPyramid();
 		void MathWithCpp();
 		void SecretMessage();
+		void FavoriteNum();
 		unsigned long long fibonacci(unsigned long long n);
 		unsigned long long factorial(unsigned long long n);
 	};

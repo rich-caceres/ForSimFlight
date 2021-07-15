@@ -1,3 +1,11 @@
+/*============== CPP Fun ==================
+*Author: Richard Caceres
+* 
+* Author has created this program to practice with C++.
+* To use this application uncomment functions in main to see the output of each function.
+* 
+*/
+
 #include "Header.h"
 #include <iostream>;
 #include <string>;
@@ -8,28 +16,11 @@
 
 using namespace head;
 
-unsigned long long fibonacci(unsigned long long n) {
-	if (n <= 1) 
-		return n;
-	
-	return fibonacci(n - 1) + fibonacci(n - 2);
-}
-unsigned long long factorial(unsigned long long n) {
-	if (n == 0) 
-		return 1;
 
-	return n * factorial(n - 1);
-}
 
 int main()
 {
-	//int yourFavNum = 0;
-
-	//std::cout << "please enter your favorite number:";
-	//std::cin >> yourFavNum;
-
-	//std::cout << "Your favorite number is: " + std::to_string(yourFavNum) << std::endl;
-	//multiply(yourFavNum);
+	//FavoriteNum();
 	//=================================================================================
 	//vectorFun();
 	//=================================================================================
@@ -47,6 +38,29 @@ int main()
 	//=================================================================================
 	//std::cout << factorial(1);
 	return 0;
+}
+
+void FavoriteNum() {
+	 int yourFavNum = 0;
+
+	std::cout << "please enter your favorite number:";
+	std::cin >> yourFavNum;
+
+	std::cout << "Your favorite number is: " + std::to_string(yourFavNum) << std::endl;
+	multiply(yourFavNum);
+}
+
+unsigned long long fibonacci(unsigned long long n) {
+	if (n <= 1)
+		return n;
+
+	return fibonacci(n - 1) + fibonacci(n - 2);
+}
+unsigned long long factorial(unsigned long long n) {
+	if (n == 0)
+		return 1;
+
+	return n * factorial(n - 1);
 }
 
 void MoneyChallenge() {
