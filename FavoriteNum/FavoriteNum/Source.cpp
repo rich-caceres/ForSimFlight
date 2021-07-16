@@ -58,7 +58,7 @@ void Pointers() {
 
 	int_ptr = &num;
 
-	std::cout << *int_ptr;
+	std::cout << int_ptr;
 }
 
 void FavoriteNum() {
@@ -170,6 +170,8 @@ void MenuOption() {
 
 	bool quit{ false };
 	std::vector<int> vec{};
+
+	std::cout << std::boolalpha;
 
 	while (!quit) {
 		char option{ ' ' };
