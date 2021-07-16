@@ -25,6 +25,7 @@ void MathWithCpp();
 void SecretMessage();
 void FavoriteNum();
 void Pointers();
+void PrintAllNums(std::vector<int> *const vec);
 unsigned long long fibonacci(unsigned long long n);
 unsigned long long factorial(unsigned long long n);
 
@@ -36,13 +37,13 @@ int main()
 	//=================================================================================
 	//MoneyChallenge();
 	//=================================================================================
-	//MenuOption();
+	MenuOption();
 	//=================================================================================
 	//SecretMessage();
 	//=================================================================================
 	//LetterPyramid();
 	//=================================================================================
-	MathWithCpp();
+	//MathWithCpp();
 	//=================================================================================
 	//std::cout<<fibonacci(20);
 	//=================================================================================
@@ -166,6 +167,19 @@ void multiply(int number)
 	std::cout << "Your favorite number * 2 is equal to: " + std::to_string(number);
 }
 
+void PrintAllNums(std::vector<int> *const vec) {
+	std::cout << "You selected to print all numbers!\n";
+	if (!(*vec).empty()) {
+		for (int vec_item : *vec) {
+			std::cout << vec_item << " ";
+		}
+	}
+	else {
+		std::cout << "There is nothing to show here as the list is empty!\n";
+	}
+	std::cout << std::endl;
+}
+
 void MenuOption() {
 
 	bool quit{ false };
@@ -183,11 +197,7 @@ void MenuOption() {
 		switch (option) {
 		case 'p':
 		case 'P':
-			std::cout << "You selected to print all numbers!";
-			for (int vec_item : vec) {
-				std::cout << vec_item << " ";
-			}
-			std::cout << std::endl;
+			PrintAllNums(&vec);
 			break;
 		case 'a':
 		case 'A':
