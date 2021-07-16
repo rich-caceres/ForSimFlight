@@ -167,6 +167,16 @@ void multiply(int number)
 	std::cout << "Your favorite number * 2 is equal to: " + std::to_string(number);
 }
 
+void AddNumberToVec(std::vector<int> *vec) {
+	int num{0};
+
+	std::cout << "Please enter the number to add:";
+	std::cin >> num;
+	(*vec).push_back(num);
+	std::cout << "You added " << num << " to the list!" << std::endl;
+
+}
+
 void PrintAllNums(std::vector<int> *const vec) {
 	std::cout << "You selected to print all numbers!\n";
 	if (!(*vec).empty()) {
@@ -201,10 +211,7 @@ void MenuOption() {
 			break;
 		case 'a':
 		case 'A':
-			std::cout << "Please enter the number to add: ";
-			std::cin >> num;
-			vec.push_back(num);
-			std::cout << "You added " << num << " to the list!" << std::endl;
+			AddNumberToVec(&vec);
 			break;
 		case 'm':
 		case 'M':
