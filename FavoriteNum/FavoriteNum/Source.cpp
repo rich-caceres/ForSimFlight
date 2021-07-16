@@ -7,14 +7,15 @@
 */
 
 #include "Header.h"
-#include <iostream>;
-#include <string>;
-#include <vector>;
-#include <cmath>;
-#include <cstdlib>;
-#include <ctime>;
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
 
 using namespace head;
+
 void MoneyChallenge();
 void vectorFun();
 void multiply(int number);
@@ -198,7 +199,7 @@ void MenuOption() {
 			break;
 		case 'm':
 		case 'M':
-			std::cout << "This gets Mean numbers!\n";
+			std::cout << "This gets the Mean of numbers!\n";
 			for (int vec_item : vec) {
 				result = result + vec_item;
 			}
