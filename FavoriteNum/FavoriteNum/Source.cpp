@@ -26,6 +26,7 @@ void SecretMessage();
 void FavoriteNum();
 void Pointers();
 void PrintAllNums(std::vector<int> *const vec);
+void AddNumberToVec(std::vector<int> *vec);
 unsigned long long fibonacci(unsigned long long n);
 unsigned long long factorial(unsigned long long n);
 
@@ -49,7 +50,7 @@ int main()
 	//=================================================================================
 	//std::cout << factorial(1);
 	//=================================================================================
-	Pointers();
+	//Pointers();
 	return 0;
 }
 
