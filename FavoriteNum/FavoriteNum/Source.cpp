@@ -166,13 +166,10 @@ void multiply(int number)
 	std::cout << "Your favorite number * 2 is equal to: " + std::to_string(number);
 }
 
-
-
 void MenuOption() {
 
 	bool quit{ false };
 	std::vector<int> vec{};
-
 
 	while (!quit) {
 		char option{ ' ' };
