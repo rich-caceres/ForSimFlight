@@ -279,7 +279,6 @@ void SecretMessage() {
 	std::cout << "Enter a message you wish to encrypt:" << std::endl;
 	std::getline(std::cin, message);
 
-
 	for (size_t i{ 0 }; i < message.size(); i++) {
 		for (size_t j{ 0 }; j < alphabet.size(); j++) {
 			if (message.at(i) == alphabet.at(j)) {
