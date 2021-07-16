@@ -296,5 +296,4 @@ void SecretMessage() {
 		}
 	}
 	std::cout << "Here is the de-crypted message: " << message << std::endl;
-
 }
