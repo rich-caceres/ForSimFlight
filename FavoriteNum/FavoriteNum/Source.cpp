@@ -196,13 +196,14 @@ void PrintAllNums(std::vector<int> *const vec) {
 void MeanNumbers(std::vector<int> *const vec) {
 	float result{ 0 };
 
-	std::cout << std::setprecision(2);
+	
 	std::cout << "This gets the Mean of numbers!\n";
 
 	for (int vec_item : *vec) {
 		result = result + vec_item;
 	}
 	result = result / (*vec).size();
+	std::cout << std::setprecision(5);
 	std::cout << "The mean of all the numbers in the vector is " << result << std::endl;
 }
 
