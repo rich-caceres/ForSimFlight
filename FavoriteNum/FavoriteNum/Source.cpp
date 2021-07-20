@@ -203,6 +203,18 @@ void MeanNumbers(std::vector<int> *const vec) {
 	std::cout << "The mean of all the numbers in the vector is " << result << std::endl;
 }
 
+void SmallestOfNumbers(std::vector<int> *const vec) {
+	int smallest{ 0 };
+
+	std::cout << "This gets smallest number!\n";
+	for (int vec_item : *vec) {
+		if (vec_item < smallest || smallest == 0) {
+			smallest = vec_item;
+		}
+	}
+	std::cout << "The smallest number in the vector is: " << smallest << std::endl;
+}
+
 void MenuOption() {
 
 	bool quit{ false };
@@ -232,13 +244,6 @@ void MenuOption() {
 			break;
 		case 's':
 		case 'S':
-			std::cout << "This gets smallest number!\n";
-			for (int vec_item : vec) {
-				if (vec_item < smallest || smallest == 0) {
-					smallest = vec_item;
-				}
-			}
-			std::cout << "The smallest number in the vector is: " << smallest << std::endl;
 			break;
 		case 'l':
 		case 'L':
