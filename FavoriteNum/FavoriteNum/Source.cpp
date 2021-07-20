@@ -27,6 +27,7 @@ void FavoriteNum();
 void Pointers();
 void PrintAllNums(std::vector<int> *const vec);
 void AddNumberToVec(std::vector<int> *vec);
+void MeanNumbers(std::vector<int> *const vec);
 unsigned long long fibonacci(unsigned long long n);
 unsigned long long factorial(unsigned long long n);
 
@@ -191,6 +192,17 @@ void PrintAllNums(std::vector<int> *const vec) {
 	std::cout << std::endl;
 }
 
+void MeanNumbers(std::vector<int> *const vec) {
+	float result{ 0 };
+
+	std::cout << "This gets the Mean of numbers!\n";
+	for (int vec_item : *vec) {
+		result = result + vec_item;
+	}
+	result = result / (*vec).size();
+	std::cout << "The mean of all the numbers in the vector is " << result << std::endl;
+}
+
 void MenuOption() {
 
 	bool quit{ false };
@@ -216,12 +228,7 @@ void MenuOption() {
 			break;
 		case 'm':
 		case 'M':
-			std::cout << "This gets the Mean of numbers!\n";
-			for (int vec_item : vec) {
-				result = result + vec_item;
-			}
-			result = result / vec.size();
-			std::cout << "The mean of all the numbers in the vector is " << result << std::endl;
+			MeanNumbers(&vec);
 			break;
 		case 's':
 		case 'S':
