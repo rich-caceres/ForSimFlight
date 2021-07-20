@@ -13,6 +13,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <iomanip>
 
 using namespace head;
 
@@ -194,7 +195,7 @@ void PrintAllNums(std::vector<int> *const vec) {
 
 void MeanNumbers(std::vector<int> *const vec) {
 	float result{ 0 };
-
+	std::cout << std::setprecision(2);
 	std::cout << "This gets the Mean of numbers!\n";
 	for (int vec_item : *vec) {
 		result = result + vec_item;
