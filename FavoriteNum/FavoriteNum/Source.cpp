@@ -244,6 +244,7 @@ void MenuOption() {
 			break;
 		case 's':
 		case 'S':
+			SmallestOfNumbers(&vec);
 			break;
 		case 'l':
 		case 'L':
