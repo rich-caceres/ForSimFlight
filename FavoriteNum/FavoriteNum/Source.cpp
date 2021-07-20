@@ -215,6 +215,18 @@ void SmallestOfNumbers(std::vector<int> *const vec) {
 	std::cout << "The smallest number in the vector is: " << smallest << std::endl;
 }
 
+void LargestOfNumbers(std::vector<int>* const vec) {
+	int largest{ 0 };
+
+	std::cout << "This gets Largest numbers!\n";
+	for (int vec_item : *vec) {
+		if (vec_item > largest || largest == 0) {
+			largest = vec_item;
+		}
+	}
+	std::cout << "The largest number in the vector is: " << largest << std::endl;
+}
+
 void MenuOption() {
 
 	bool quit{ false };
@@ -247,13 +259,7 @@ void MenuOption() {
 			break;
 		case 'l':
 		case 'L':
-			std::cout << "This gets Largest numbers!\n";
-			for (int vec_item : vec) {
-				if (vec_item > largest || largest == 0) {
-					largest = vec_item;
-				}
-			}
-			std::cout << "The largest number in the vector is: " << largest << std::endl;
+			LargestOfNumbers(&vec);
 			break;
 		case 'q':
 		case 'Q':
