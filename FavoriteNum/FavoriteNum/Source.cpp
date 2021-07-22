@@ -242,7 +242,7 @@ void MenuOption() {
 		char option{ ' ' };
 		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nQ- Quit\n\nEnter your choice: ";
 		std::cin >> option;
-
+		//TODO: add declarations for the rest of the methods in the file.
 		switch (option) {
 		case 'p':
 		case 'P':
