@@ -240,7 +240,7 @@ void MenuOption() {
 
 	while (!quit) {
 		char option{ ' ' };
-		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nQ- Quit\n\nEnter your choice: ";
+		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\n1 - Letter Pyramid by C++\nQ- Quit\n\nEnter your choice: ";
 		std::cin >> option;
 		//TODO: add declarations for the rest of the methods in the file.
 		switch (option) {
@@ -264,6 +264,8 @@ void MenuOption() {
 		case 'L':
 			LargestOfNumbers(&vec);
 			break;
+		case '1':
+			LetterPyramid();
 		case 'q':
 		case 'Q':
 			std::cout << "This quits program!";
