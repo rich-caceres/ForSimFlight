@@ -272,7 +272,6 @@ void MenuOption() {
 		default: std::cout << "Invalid input, please try again.\n";
 		}
 	}
-
 }
 
 void LetterPyramid() {
