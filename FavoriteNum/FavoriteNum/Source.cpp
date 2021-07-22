@@ -240,7 +240,6 @@ void MenuOption() {
 
 	while (!quit) {
 		char option{ ' ' };
-		int num{ 0 }, smallest{ 0 }, largest{ 0 };
 		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nQ- Quit\n\nEnter your choice: ";
 		std::cin >> option;
 
