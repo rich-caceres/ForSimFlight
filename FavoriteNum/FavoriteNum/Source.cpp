@@ -270,6 +270,9 @@ void MenuOption() {
 		case '2':
 			std::cout << "Temporary output";
 			break;
+		case '3':
+			std::cout << "Temp output for option 3";
+			break;
 		case 'q':
 		case 'Q':
 			std::cout << "This quits program!";
