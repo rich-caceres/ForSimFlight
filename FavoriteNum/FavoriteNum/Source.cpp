@@ -240,7 +240,7 @@ void MenuOption() {
 
 	while (!quit) {
 		char option{ ' ' };
-		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\n1 - Letter Pyramid by C++\n2- This is a menu option\n3 - this is a menu option\nQ- Quit\n\nEnter your choice: ";
+		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\n1 - Letter Pyramid by C++\n2 - This is a menu option\n3 - this is a menu option\nQ- Quit\n\nEnter your choice: ";
 		std::cin >> option;
 		//TODO: add declarations for the rest of the methods in the file.
 		switch (option) {
