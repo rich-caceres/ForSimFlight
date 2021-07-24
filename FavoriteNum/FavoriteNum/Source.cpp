@@ -266,6 +266,7 @@ void MenuOption() {
 			break;
 		case '1':
 			LetterPyramid();
+			break;
 		case 'q':
 		case 'Q':
 			std::cout << "This quits program!";
