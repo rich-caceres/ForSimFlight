@@ -271,7 +271,7 @@ void MenuOption() {
 			LetterPyramid();
 			break;
 		case '3':
-			
+			SecretMessage();
 			break;
 		case 'q':
 		case 'Q':
