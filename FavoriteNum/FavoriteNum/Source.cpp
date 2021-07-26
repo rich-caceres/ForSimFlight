@@ -233,10 +233,11 @@ void LargestOfNumbers(std::vector<int>* const vec) {
 
 void MenuOption() {
 
-	bool quit{ false };
+	bool quit{false};
 	std::vector<int> vec{};
 
 	std::cout << std::boolalpha;
+
 
 	while (!quit) {
 		char option{ ' ' };
@@ -319,12 +320,12 @@ void MathWithCpp(){
 }
 
 void SecretMessage() {
-
+	
 	std::string message{};
 	std::string alphabet{ "abcdefghijklmnopqrstuvwxyz " };
 	std::string encrypt{ "=+$!^&.()_+=-/*8+?<>6][5210" };
 	std::string encryptedMessage{};
-
+	std::cout << "This will encrypt a message based on input";	
 	std::cout << "You have chosen to encrypt message!!\n";
 
 	std::cout << "Enter a message you wish to encrypt:" << std::endl;
