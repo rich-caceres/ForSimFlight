@@ -272,6 +272,7 @@ void MenuOption() {
 			LetterPyramid();
 			break;
 		case '3':
+			//std::cin.clear(); issue with input on seceret message
 			SecretMessage();
 			break;
 		case 'q':
