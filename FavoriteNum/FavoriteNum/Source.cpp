@@ -271,7 +271,7 @@ void MenuOption() {
 			LetterPyramid();
 			break;
 		case '3':
-			std::cout << "You have chosen to encrypt message!!";
+			
 			break;
 		case 'q':
 		case 'Q':
@@ -324,6 +324,8 @@ void SecretMessage() {
 	std::string alphabet{ "abcdefghijklmnopqrstuvwxyz " };
 	std::string encrypt{ "=+$!^&.()_+=-/*8+?<>6][5210" };
 	std::string encryptedMessage{};
+
+	std::cout << "You have chosen to encrypt message!!\n";
 
 	std::cout << "Enter a message you wish to encrypt:" << std::endl;
 	std::getline(std::cin, message);
