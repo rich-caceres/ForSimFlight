@@ -24,7 +24,7 @@ void multiply(int number);
 void MenuOption();
 void LetterPyramid();
 void MathWithCpp();
-void SecretMessage();
+void SecretMessage(std::string message);
 void FavoriteNum();
 void Pointers();
 void PrintAllNums(std::vector<int> *const vec);
@@ -273,8 +273,9 @@ void MenuOption() {
 			LetterPyramid();
 			break;
 		case '3':
-
-			SecretMessage();
+			std::string message{};
+			std::getline(std::cin, message);//still an issue with this input
+			SecretMessage(message);
 			break;
 		case 'q':
 		case 'Q':
@@ -321,17 +322,15 @@ void MathWithCpp(){
 	std::cout << "nothing here yet";
 }
 
-void SecretMessage() {
+void SecretMessage(std::string message) {
 	
-	std::string message{};
 	std::string alphabet{ "abcdefghijklmnopqrstuvwxyz " };
 	std::string encrypt{ "=+$!^&.()_+=-/*8+?<>6][5210" };
 	std::string encryptedMessage{};
 	std::cout << "This will encrypt a message based on input";	
 	std::cout << "You have chosen to encrypt message!!\n";
 
-	std::cout << "Enter a message you wish to encrypt:" << std::endl;
-	std::getline(std::cin, message);
+	//std::getline(std::cin, message);
 
 	for (size_t i{ 0 }; i < message.size(); i++) {
 		for (size_t j{ 0 }; j < alphabet.size(); j++) {
