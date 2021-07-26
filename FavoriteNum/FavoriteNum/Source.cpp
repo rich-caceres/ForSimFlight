@@ -271,7 +271,7 @@ void MenuOption() {
 			LetterPyramid();
 			break;
 		case '3':
-			std::cout << "Temp output for option 3\n";
+			std::cout << "You have chosen to encrypt message!!";
 			break;
 		case 'q':
 		case 'Q':
