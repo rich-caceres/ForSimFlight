@@ -268,7 +268,7 @@ void MenuOption() {
 			LetterPyramid();
 			break;
 		case '2':
-			
+			LetterPyramid();
 			break;
 		case '3':
 			std::cout << "Temp output for option 3\n";
