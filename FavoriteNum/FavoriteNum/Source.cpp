@@ -268,10 +268,10 @@ void MenuOption() {
 			LetterPyramid();
 			break;
 		case '2':
-			std::cout << "Temp output for option 2";
+			
 			break;
 		case '3':
-			std::cout << "Temp output for option 3";
+			std::cout << "Temp output for option 3\n";
 			break;
 		case 'q':
 		case 'Q':
@@ -285,7 +285,7 @@ void MenuOption() {
 
 void LetterPyramid() {
 	std::string input{};
-
+	std::cout << "Thsi will output a character pyramid\n";
 	std::cout << "Enter various letters or characters to have C++ create a pyramid: ";
 	std::cin >> input;
 
