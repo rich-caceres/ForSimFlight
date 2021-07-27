@@ -326,7 +326,6 @@ void SecretMessage() {
 	
 	std::string alphabet{ "abcdefghijklmnopqrstuvwxyz " };
 	std::string encrypt{ "=+$!^&.()_+=-/*8+?<>6][5210" };
-	//std::string encryptedMessage{};
 	std::cout << "This will encrypt a message based on input\n";	
 	std::cout << "You have chosen to encrypt message!!\n";
 	
