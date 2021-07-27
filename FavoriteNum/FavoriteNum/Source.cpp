@@ -128,6 +128,7 @@ void vectorFun() {
 
 	vector1.push_back(10);
 	vector1.push_back(20);
+
 	std::cout << "These are the results from vector1:\n";
 	for (int i = 0; i < vector1.size(); i++) {
 		std::cout << vector1.at(i) << "\n";
