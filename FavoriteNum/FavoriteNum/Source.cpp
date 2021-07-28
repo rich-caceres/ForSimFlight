@@ -7,14 +7,13 @@
 */
 
 #include "Header.h"
-#include <iostream>
-#include <string>
-#include <vector>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-#include <iomanip>
-#include <sstream>
+#include <iostream>//needed for input output
+#include <string>//using strings
+#include <vector>//using vectors
+#include <cmath>//math library
+#include <cstdlib>//C standard library
+#include <iomanip>//setting Precision
+
 
 using namespace head;
 
