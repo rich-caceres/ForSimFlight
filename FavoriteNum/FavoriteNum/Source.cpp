@@ -19,18 +19,18 @@ using namespace head;
 
 void MoneyChallenge();
 void vectorFun();
-void multiply(int number);
+void multiply(int);
 void MenuOption();
 void LetterPyramid();
 void MathWithCpp();
 void SecretMessage();
 void FavoriteNum();
 void Pointers();
-void PrintAllNums(std::vector<int> *const vec);
-void AddNumberToVec(std::vector<int> *vec);
-void MeanNumbers(std::vector<int> *const vec);
-unsigned long long fibonacci(unsigned long long n);
-unsigned long long factorial(unsigned long long n);
+void PrintAllNums(std::vector<int> *const);
+void AddNumberToVec(std::vector<int>* );
+void MeanNumbers(std::vector<int> *const);
+unsigned long long fibonacci(unsigned long long);
+unsigned long long factorial(unsigned long long);
 
 int main()
 {
