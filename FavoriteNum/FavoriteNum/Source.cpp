@@ -29,7 +29,7 @@ void FavoriteNum();
 void Pointers();
 void PointerSolution();
 void print(const int *const arr, size_t arrSize);
-int * apply_all(const int *const arr1, const size_t arraySize1, const int *const arr2, const size_t arraySize2);
+int * apply_all(const int *const arr1, size_t arraySize1, const int *const arr2, size_t arraySize2);
 void PrintAllNums(std::vector<int> *const);
 void AddNumberToVec(std::vector<int>* );
 void MeanNumbers(std::vector<int> *const);
@@ -86,25 +86,25 @@ void PointerSolution(){
 	std::cout << std::endl;
 }
 
-void print(int arrayRef[], size_t sizeOfArray) {
+void print(const int *const arrayRef, size_t sizeOfArray) {
 	for (int item = 0; item< sizeOfArray; item++) {
 		std::cout << arrayRef[item]<< " ";
 	}
 }
 
-int * apply_all(int array1[], size_t array1Size, int array2[], size_t array2Size) {
-	int *results = new int(array1Size * array2Size);
+int * apply_all(const int *const array1, size_t array1Size, const int *const array2, size_t array2Size) {
+	int* results_arr{};
+	results_arr = new int[array1Size * array2Size];
 	int index = 0;
 
 	for (int item1 = 0; item1 < array1Size; item1++) {
 		for (int item2 = 0; item2 < array2Size; item2++) {
 			int tempNum{ 0 };
-			tempNum = array1[item1] * array2[item2];
-			results[index] = tempNum;
+			results_arr[index] = array1[item1] * array2[item2];
 			index++;
 		}
 	}
-	return results;
+	return results_arr;
 }
 void Pointers() {
 	int *int_ptr{ nullptr };
