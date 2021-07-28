@@ -13,6 +13,7 @@
 #include <cmath>//math library
 #include <cstdlib>//C standard library
 #include <iomanip>//setting Precision
+#include <array>//using array library
 
 
 using namespace head;
@@ -26,6 +27,9 @@ void MathWithCpp();
 void SecretMessage();
 void FavoriteNum();
 void Pointers();
+void PointerSolution();
+void print(int[], size_t);
+int * apply_all(const int *const arr1, const size_t arraySize1, const int *const arr2, const size_t arraySize2);
 void PrintAllNums(std::vector<int> *const);
 void AddNumberToVec(std::vector<int>* );
 void MeanNumbers(std::vector<int> *const);
@@ -40,7 +44,7 @@ int main()
 	//=================================================================================
 	//MoneyChallenge();
 	//=================================================================================
-	MenuOption();
+	//MenuOption();
 	//=================================================================================
 	//SecretMessage();
 	//=================================================================================
@@ -53,9 +57,55 @@ int main()
 	//std::cout << factorial(1);
 	//=================================================================================
 	//Pointers();
+	//=================================================================================
+	PointerSolution();
+
 	return 0;
 }
 
+void PointerSolution(){
+	const size_t array1_size {5};
+	const size_t array2_size {3};
+
+	int array1[] {1,2,3,4,5};
+	int array2[] {10,20,30};
+
+	std::cout << "Array 1: ";
+	print(array1,array1_size);
+
+	std::cout << "Array 2: ";
+	print(array2,array2_size);
+
+	int* results = apply_all(array1, array1_size, array2, array2_size);
+	constexpr size_t results_size {array1_size * array2_size};
+
+	std::cout << "Result: ";
+	print(results, results_size);
+
+	delete[] results;
+	std::cout << std::endl;
+}
+
+void print(int arrayRef[], size_t sizeOfArray) {
+	for (int item = 0; item< sizeOfArray; item++) {
+		std::cout << arrayRef[item]<< " ";
+	}
+}
+
+int * apply_all(int array1[], size_t array1Size, int array2[], size_t array2Size) {
+	int *results = new int(array1Size * array2Size);
+	int index = 0;
+
+	for (int item1 = 0; item1 < array1Size; item1++) {
+		for (int item2 = 0; item2 < array2Size; item2++) {
+			int tempNum{ 0 };
+			tempNum = array1[item1] * array2[item2];
+			results[index] = tempNum;
+			index++;
+		}
+	}
+	return results;
+}
 void Pointers() {
 	int *int_ptr{ nullptr };
 	int num{ 10 };
