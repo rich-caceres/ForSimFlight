@@ -28,7 +28,7 @@ void SecretMessage();
 void FavoriteNum();
 void Pointers();
 void PointerSolution();
-void print(int[], size_t);
+void print(const int *const arr, size_t arrSize);
 int * apply_all(const int *const arr1, const size_t arraySize1, const int *const arr2, const size_t arraySize2);
 void PrintAllNums(std::vector<int> *const);
 void AddNumberToVec(std::vector<int>* );
