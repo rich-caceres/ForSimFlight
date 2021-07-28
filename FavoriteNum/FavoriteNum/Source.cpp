@@ -100,7 +100,7 @@ int * apply_all(const int *const array1, size_t array1Size, const int *const arr
 	for (int item1 = 0; item1 < array1Size; item1++) {
 		for (int item2 = 0; item2 < array2Size; item2++) {
 			int tempNum{ 0 };
-			results_arr[index] = array1[item1] * array2[item2];
+			results_arr[index] = array1[item2] * array2[item1];
 			index++;
 		}
 	}
