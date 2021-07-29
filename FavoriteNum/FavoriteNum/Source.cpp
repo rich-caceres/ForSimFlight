@@ -15,7 +15,6 @@
 #include <iomanip>//setting Precision
 #include <array>//using array library
 
-
 using namespace head;
 
 void MoneyChallenge();
