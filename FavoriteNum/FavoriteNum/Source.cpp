@@ -82,7 +82,7 @@ void PointerSolution(){
 	std::cout << "Result: ";
 	print(results, results_size);
 
-	delete[] results;
+	delete[] results;//release memory in heap
 	std::cout << std::endl;
 }
 
@@ -94,7 +94,7 @@ void print(const int *const arrayRef, size_t sizeOfArray) {
 
 int * apply_all(const int *const array1, size_t array1Size, const int *const array2, size_t array2Size) {
 	int* results_arr{};
-	results_arr = new int[array1Size * array2Size];
+	results_arr = new int[array1Size * array2Size];//creates memory in heap
 	int index = 0;
 
 	for (int item1 = 0; item1 < array1Size; item1++) {
