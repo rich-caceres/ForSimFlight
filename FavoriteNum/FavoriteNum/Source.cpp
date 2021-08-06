@@ -88,12 +88,14 @@ void PointerSolution(){
 	std::cout << std::endl;
 }
 
+//pointer solution to print items in an array
 void print(const int *const arrayRef, size_t sizeOfArray) {
 	for (int item = 0; item< sizeOfArray; item++) {
 		std::cout << arrayRef[item]<< " ";
 	}
 }
 
+//pointer solution to combine all items in an array
 int * apply_all(const int *const array1, size_t array1Size, const int *const array2, size_t array2Size) {
 	int* results_arr{};
 	results_arr = new int[array1Size * array2Size];//creates memory in heap
