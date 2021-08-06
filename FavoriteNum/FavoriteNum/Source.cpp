@@ -340,7 +340,6 @@ void MenuOption() {
 
 void LetterPyramid() {
 	
-	
 	std::string input{};
 	std::cout << "Thsi will output a character pyramid\n";
 	std::cout << "Enter various letters or characters to have C++ create a pyramid: ";
