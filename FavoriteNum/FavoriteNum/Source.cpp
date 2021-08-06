@@ -62,6 +62,7 @@ int main()
 	return 0;
 }
 
+//prints out array items and also combines both arrays
 void PointerSolution(){
 	const size_t array1_size {5};
 	const size_t array2_size {3};
