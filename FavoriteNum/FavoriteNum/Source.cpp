@@ -17,6 +17,7 @@
 
 using namespace head;
 
+//prototypes begin here
 void MoneyChallenge();
 void vectorFun();
 void multiply(int);
@@ -34,6 +35,7 @@ void AddNumberToVec(std::vector<int>* );
 void MeanNumbers(std::vector<int> *const);
 unsigned long long fibonacci(unsigned long long);
 unsigned long long factorial(unsigned long long);
+//prototypes end here
 
 int main()
 {
