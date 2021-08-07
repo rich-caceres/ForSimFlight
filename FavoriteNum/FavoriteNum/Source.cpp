@@ -3,6 +3,8 @@
 * 
 * Author has created this program to practice with C++.
 * To use this application uncomment functions in main to see the output of each function.
+* Menu option functions has a good amount of the functions coded here.
+* Select accordingly!
 * 
 */
 
