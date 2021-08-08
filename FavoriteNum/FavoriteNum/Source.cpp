@@ -226,7 +226,7 @@ void multiply(int number)
 	std::cout << "Your favorite number * 2 is equal to: " + std::to_string(number);
 }
 
-void AddNumberToVec(std::vector<int> *vec) {
+void addNumberToVec(std::vector<int> *vec) {
 	int num{0};
 
 	std::cout << "Please enter the number to add:";
@@ -236,7 +236,7 @@ void AddNumberToVec(std::vector<int> *vec) {
 
 }
 
-void PrintAllNums(std::vector<int> *const vec) {
+void printAllNums(std::vector<int> *const vec) {
 	std::cout << "You selected to print all numbers!\n";
 	if (!(*vec).empty()) {
 		for (int vec_item : *vec) {
@@ -249,7 +249,7 @@ void PrintAllNums(std::vector<int> *const vec) {
 	std::cout << std::endl;
 }
 
-void MeanNumbers(std::vector<int> *const vec) {
+void meanNumbers(std::vector<int> *const vec) {
 	float result{ 0 };
 
 	
@@ -263,7 +263,7 @@ void MeanNumbers(std::vector<int> *const vec) {
 	std::cout << "The mean of all the numbers in the vector is " << result << std::endl;
 }
 
-void SmallestOfNumbers(std::vector<int> *const vec) {
+void smallestOfNumbers(std::vector<int> *const vec) {
 	int smallest{ 0 };
 
 	std::cout << "This gets smallest number!\n";
@@ -275,7 +275,7 @@ void SmallestOfNumbers(std::vector<int> *const vec) {
 	std::cout << "The smallest number in the vector is: " << smallest << std::endl;
 }
 
-void LargestOfNumbers(std::vector<int>* const vec) {
+void largestOfNumbers(std::vector<int>* const vec) {
 	int largest{ 0 };
 
 	std::cout << "This gets Largest numbers!\n";
@@ -287,7 +287,7 @@ void LargestOfNumbers(std::vector<int>* const vec) {
 	std::cout << "The largest number in the vector is: " << largest << std::endl;
 }
 
-void MenuOption() {
+void menuOption() {
 
 	bool quit{false};
 	std::vector<int> vec{};
@@ -303,32 +303,32 @@ void MenuOption() {
 		switch (option) {
 		case 'p':
 		case 'P':
-			PrintAllNums(&vec);
+			printAllNums(&vec);
 			break;
 		case 'a':
 		case 'A':
-			AddNumberToVec(&vec);
+			addNumberToVec(&vec);
 			break;
 		case 'm':
 		case 'M':
-			MeanNumbers(&vec);
+			meanNumbers(&vec);
 			break;
 		case 's':
 		case 'S':
-			SmallestOfNumbers(&vec);
+			smallestOfNumbers(&vec);
 			break;
 		case 'l':
 		case 'L':
-			LargestOfNumbers(&vec);
+			largestOfNumbers(&vec);
 			break;
 		case '1':
-			LetterPyramid();
+			letterPyramid();
 			break;
 		case '2':
-			LetterPyramid();
+			letterPyramid();
 			break;
 		case '3':
-			SecretMessage();
+			secretMessage();
 			break;
 		case 'q':
 		case 'Q':
@@ -340,7 +340,7 @@ void MenuOption() {
 	}
 }
 
-void LetterPyramid() {
+void letterPyramid() {
 	
 	std::string input{};
 	std::cout << "Thsi will output a character pyramid\n";
@@ -372,11 +372,11 @@ void LetterPyramid() {
 		++position;
 	}
 }
-void MathWithCpp(){
+void mathWithCpp(){
 	std::cout << "nothing here yet";
 }
 
-void SecretMessage() {
+void secretMessage() {
 	
 	std::string alphabet{ "abcdefghijklmnopqrstuvwxyz " };
 	std::string encrypt{ "=+$!^&.()_+=-/*8+?<>6][5210" };
