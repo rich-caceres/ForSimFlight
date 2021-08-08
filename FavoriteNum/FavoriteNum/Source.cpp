@@ -371,11 +371,11 @@ void Header::letterPyramid() {
 		++position;
 	}
 }
-void mathWithCpp(){
+void Header::mathWithCpp(){
 	std::cout << "nothing here yet";
 }
 
-void secretMessage() {
+void Header::secretMessage() {
 	
 	std::string alphabet{ "abcdefghijklmnopqrstuvwxyz " };
 	std::string encrypt{ "=+$!^&.()_+=-/*8+?<>6][5210" };
