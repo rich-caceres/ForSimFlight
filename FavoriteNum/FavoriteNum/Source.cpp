@@ -45,7 +45,7 @@ int main()
 	//=================================================================================
 	//vectorFun();
 	//=================================================================================
-	//MoneyChallenge();
+	//moneyChallenge();
 	//=================================================================================
 	//MenuOption();
 	//=================================================================================
@@ -143,7 +143,7 @@ unsigned long long factorial(unsigned long long n) {
 	return n * factorial(n - 1);
 }
 
-void MoneyChallenge() {
+void moneyChallenge() {
 	int centsInteger{ 0 }, total{ 0 }, dollars{ 0 }, quarters{ 0 }, dimes{ 0 }, nickles{ 0 }, pennies{ 0 };
 	const int DOLLAR{ 100 };
 	const int QUARTER{ 25 };
