@@ -18,8 +18,6 @@
 #include "array"//using array library
 #include "Header.h"
 
-//prototypes begin here
-//prototypes end here
 
 int main()
 {
