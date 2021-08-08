@@ -20,21 +20,21 @@
 using namespace head;
 
 //prototypes begin here
-void MoneyChallenge();
+void moneyChallenge();
 void vectorFun();
 void multiply(int);
-void MenuOption();
-void LetterPyramid();
-void MathWithCpp();
-void SecretMessage();
+void menuOption();
+void letterPyramid();
+void mathWithCpp();
+void secretMessage();
 void FavoriteNum();
 void Pointers();
 void PointerSolution();
 void print(const int *const arr, size_t arrSize);
 int * apply_all(const int *const arr1, size_t arraySize1, const int *const arr2, size_t arraySize2);
-void PrintAllNums(std::vector<int> *const);
-void AddNumberToVec(std::vector<int>* );
-void MeanNumbers(std::vector<int> *const);
+void printAllNums(std::vector<int> *const);
+void addNumberToVec(std::vector<int>* );
+void meanNumbers(std::vector<int> *const);
 unsigned long long fibonacci(unsigned long long);
 unsigned long long factorial(unsigned long long);
 //prototypes end here
@@ -47,11 +47,11 @@ int main()
 	//=================================================================================
 	//moneyChallenge();
 	//=================================================================================
-	//MenuOption();
+	//menuOption();
 	//=================================================================================
-	//SecretMessage();
+	//secretMessage();
 	//=================================================================================
-	//LetterPyramid();
+	//letterPyramid();
 	//=================================================================================
 	//MathWithCpp();
 	//=================================================================================
