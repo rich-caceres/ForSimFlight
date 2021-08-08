@@ -29,7 +29,7 @@ void mathWithCpp();
 void secretMessage();
 void FavoriteNum();
 void Pointers();
-void PointerSolution();
+void pointerSolution();
 void print(const int *const arr, size_t arrSize);
 int * apply_all(const int *const arr1, size_t arraySize1, const int *const arr2, size_t arraySize2);
 void printAllNums(std::vector<int> *const);
@@ -61,13 +61,13 @@ int main()
 	//=================================================================================
 	//Pointers();
 	//=================================================================================
-	PointerSolution();
+	pointerSolution();
 
 	return 0;
 }
 
 //prints out array items and also combines both arrays
-void PointerSolution(){
+void pointerSolution(){
 	const size_t array1_size {5};
 	const size_t array2_size {3};
 
