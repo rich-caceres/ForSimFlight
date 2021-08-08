@@ -16,6 +16,7 @@
 #include "cstdlib"//C standard library
 #include "iomanip"//setting Precision
 #include "array"//using array library
+#include "Header.h"
 
 //prototypes begin here
 void moneyChallenge();
@@ -65,7 +66,7 @@ int main()
 }
 
 //prints out array items and also combines both arrays
-void pointerSolution(){
+void Header::pointerSolution(){
 	const size_t array1_size {5};
 	const size_t array2_size {3};
 
@@ -89,14 +90,14 @@ void pointerSolution(){
 }
 
 //pointer solution to print items in an array
-void print(const int *const arrayRef, size_t sizeOfArray) {
+void Header::print(const int *const arrayRef, size_t sizeOfArray) {
 	for (int item = 0; item< sizeOfArray; item++) {
 		std::cout << arrayRef[item]<< " ";
 	}
 }
 
 //pointer solution to combine all items in an array
-int * apply_all(const int *const array1, size_t array1Size, const int *const array2, size_t array2Size) {
+int * Header::apply_all(const int *const array1, size_t array1Size, const int *const array2, size_t array2Size) {
 	int* results_arr{};
 	results_arr = new int[array1Size * array2Size];//creates memory in heap
 	int index = 0;
@@ -109,7 +110,7 @@ int * apply_all(const int *const array1, size_t array1Size, const int *const arr
 	}
 	return results_arr;
 }
-void pointers() {
+void Header::pointers() {
 	int *int_ptr{ nullptr };
 	int num{ 10 };
 
@@ -118,7 +119,7 @@ void pointers() {
 	std::cout << int_ptr;
 }
 
-void favoriteNum() {
+void Header::favoriteNum() {
 	 int yourFavNum = 0;
 
 	std::cout << "please enter your favorite number:";
@@ -128,20 +129,20 @@ void favoriteNum() {
 	//multiply(yourFavNum);
 }
 
-unsigned long long fibonacci(unsigned long long n) {
+unsigned long long Header::fibonacci(unsigned long long n) {
 	if (n <= 1)
 		return n;
 
 	return fibonacci(n - 1) + fibonacci(n - 2);
 }
-unsigned long long factorial(unsigned long long n) {
+unsigned long long Header::factorial(unsigned long long n) {
 	if (n == 0)
 		return 1;
 
 	return n * factorial(n - 1);
 }
 
-void moneyChallenge() {
+void Header::moneyChallenge() {
 	int centsInteger{ 0 }, total{ 0 }, dollars{ 0 }, quarters{ 0 }, dimes{ 0 }, nickles{ 0 }, pennies{ 0 };
 	const int DOLLAR{ 100 };
 	const int QUARTER{ 25 };
@@ -173,7 +174,7 @@ void moneyChallenge() {
 		<< "\nPennies: " << pennies;
 }
 
-void vectorFun() {
+void Header::vectorFun() {
 	std::vector<int> vector1;
 	std::vector<int> vector2;
 	std::vector <std::vector<int>> vector_2d;
@@ -218,13 +219,13 @@ void vectorFun() {
 
 }
 
-void multiply(int number)
+void Header::multiply(int number)
 {
 	number = number * 2;
 	std::cout << "Your favorite number * 2 is equal to: " + std::to_string(number);
 }
 
-void addNumberToVec(std::vector<int> *vec) {
+void Header::addNumberToVec(std::vector<int> *vec) {
 	int num{0};
 
 	std::cout << "Please enter the number to add:";
@@ -234,7 +235,7 @@ void addNumberToVec(std::vector<int> *vec) {
 
 }
 
-void printAllNums(std::vector<int> *const vec) {
+void Header::printAllNums(std::vector<int> *const vec) {
 	std::cout << "You selected to print all numbers!\n";
 	if (!(*vec).empty()) {
 		for (int vec_item : *vec) {
@@ -247,7 +248,7 @@ void printAllNums(std::vector<int> *const vec) {
 	std::cout << std::endl;
 }
 
-void meanNumbers(std::vector<int> *const vec) {
+void Header::meanNumbers(std::vector<int> *const vec) {
 	float result{ 0 };
 
 	
@@ -261,7 +262,7 @@ void meanNumbers(std::vector<int> *const vec) {
 	std::cout << "The mean of all the numbers in the vector is " << result << std::endl;
 }
 
-void smallestOfNumbers(std::vector<int> *const vec) {
+void Header::smallestOfNumbers(std::vector<int> *const vec) {
 	int smallest{ 0 };
 
 	std::cout << "This gets smallest number!\n";
@@ -273,7 +274,7 @@ void smallestOfNumbers(std::vector<int> *const vec) {
 	std::cout << "The smallest number in the vector is: " << smallest << std::endl;
 }
 
-void largestOfNumbers(std::vector<int>* const vec) {
+void Header::largestOfNumbers(std::vector<int>* const vec) {
 	int largest{ 0 };
 
 	std::cout << "This gets Largest numbers!\n";
@@ -285,7 +286,7 @@ void largestOfNumbers(std::vector<int>* const vec) {
 	std::cout << "The largest number in the vector is: " << largest << std::endl;
 }
 
-void menuOption() {
+void Header::menuOption() {
 
 	bool quit{false};
 	std::vector<int> vec{};
@@ -338,7 +339,7 @@ void menuOption() {
 	}
 }
 
-void letterPyramid() {
+void Header::letterPyramid() {
 	
 	std::string input{};
 	std::cout << "Thsi will output a character pyramid\n";
