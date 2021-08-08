@@ -27,8 +27,8 @@ void menuOption();
 void letterPyramid();
 void mathWithCpp();
 void secretMessage();
-void FavoriteNum();
-void Pointers();
+void favoriteNum();
+void pointers();
 void pointerSolution();
 void print(const int *const arr, size_t arrSize);
 int * apply_all(const int *const arr1, size_t arraySize1, const int *const arr2, size_t arraySize2);
@@ -41,7 +41,7 @@ unsigned long long factorial(unsigned long long);
 
 int main()
 {
-	//FavoriteNum();
+	//favoriteNum();
 	//=================================================================================
 	//vectorFun();
 	//=================================================================================
@@ -59,7 +59,7 @@ int main()
 	//=================================================================================
 	//std::cout << factorial(1);
 	//=================================================================================
-	//Pointers();
+	//pointers();
 	//=================================================================================
 	pointerSolution();
 
@@ -111,7 +111,7 @@ int * apply_all(const int *const array1, size_t array1Size, const int *const arr
 	}
 	return results_arr;
 }
-void Pointers() {
+void pointers() {
 	int *int_ptr{ nullptr };
 	int num{ 10 };
 
@@ -120,7 +120,7 @@ void Pointers() {
 	std::cout << int_ptr;
 }
 
-void FavoriteNum() {
+void favoriteNum() {
 	 int yourFavNum = 0;
 
 	std::cout << "please enter your favorite number:";
