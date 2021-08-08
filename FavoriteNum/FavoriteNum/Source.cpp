@@ -16,7 +16,6 @@
 #include "cstdlib"//C standard library
 #include "iomanip"//setting Precision
 #include "array"//using array library
-#include "Header.h"
 
 //prototypes begin here
 void moneyChallenge();
