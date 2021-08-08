@@ -8,16 +8,15 @@
 * 
 */
 
-#include "Header.h"
-#include <iostream>//needed for input output
-#include <string>//using strings
-#include <vector>//using vectors
-#include <cmath>//math library
-#include <cstdlib>//C standard library
-#include <iomanip>//setting Precision
-#include <array>//using array library
 
-using namespace head;
+#include "iostream"//needed for input output
+#include "string"//using strings
+#include "vector"//using vectors
+#include "cmath"//math library
+#include "cstdlib"//C standard library
+#include "iomanip"//setting Precision
+#include "array"//using array library
+#include "Header.h"
 
 //prototypes begin here
 void moneyChallenge();
@@ -30,13 +29,13 @@ void secretMessage();
 void favoriteNum();
 void pointers();
 void pointerSolution();
-void print(const int *const arr, size_t arrSize);
-int * apply_all(const int *const arr1, size_t arraySize1, const int *const arr2, size_t arraySize2);
-void printAllNums(std::vector<int> *const);
-void addNumberToVec(std::vector<int>* );
-void meanNumbers(std::vector<int> *const);
-unsigned long long fibonacci(unsigned long long);
-unsigned long long factorial(unsigned long long);
+void print(const int* const arr, size_t arrSize);
+int* apply_all(const int* const arr1, size_t arraySize1, const int* const arr2, size_t arraySize2);
+void printAllNums(std::vector<int>* const);
+void addNumberToVec(std::vector<int>*);
+void meanNumbers(std::vector<int>* const);
+unsigned long long fibonacci(unsigned long long n);
+unsigned long long factorial(unsigned long long n);
 //prototypes end here
 
 int main()

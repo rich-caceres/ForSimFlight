@@ -1,19 +1,14 @@
 #pragma once
-namespace head 
-{
-	class Functions 
+#include "iostream"//needed for input output
+#include "string"//using strings
+#include "vector"//using vectors
+#include "cmath"//math library
+#include "cstdlib"//C standard library
+#include "iomanip"//setting Precision
+#include "array"//using array library
+
+	class Header 
 	{
 	public:
-		void MoneyChallenge();
-		void vectorFun();
-		void multiply(int number);
-		void MenuOption();
-		void LetterPyramid();
-		void MathWithCpp();
-		void SecretMessage();
-		void FavoriteNum();
-		void Pointers();
-		unsigned long long fibonacci(unsigned long long n);
-		unsigned long long factorial(unsigned long long n);
+		//nothing here yet
 	};
-}
