@@ -237,13 +237,17 @@ void Header::menuOption() {
 
 	while (!quit) {
 		char option{ ' ' };
-		std::cout << "P - Print numbers\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\n1 - Letter Pyramid by C++\n2 - This is a menu option\n3 - This will create an encrypted message\nQ- Quit\n\nEnter your choice: ";
+		std::cout << "P - Print numbers\n I - Pointer Solution\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\n1 - Letter Pyramid by C++\n2 - This is a menu option\n3 - This will create an encrypted message\nQ- Quit\n\nEnter your choice: ";
 		std::cin >> option;
 		//TODO: add declarations for the rest of the methods in the file.
 		switch (option) {
 		case 'p':
 		case 'P':
 			printAllNums(&vec);
+			break;
+		case 'i':
+		case 'I':
+			pointerSolution();
 			break;
 		case 'a':
 		case 'A':
