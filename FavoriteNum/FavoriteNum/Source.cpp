@@ -36,7 +36,7 @@ int main()
 	//pointers();
 	//=================================================================================
 	Header head;
-	head.pointerSolution();
+	head.menuOption();
 
 	return 0;
 }
