@@ -40,5 +40,3 @@ int main()
 
 	return 0;
 }
-
-//prints out array items and also combines both arrays
