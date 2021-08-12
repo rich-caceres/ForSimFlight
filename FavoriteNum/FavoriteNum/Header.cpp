@@ -238,7 +238,7 @@ void Header::menuOption() {
 
 	while (!quit) {
 		char option{ ' ' };
-		std::cout << "P - Print numbers\nI - Pointer Solution\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\n1 - Letter Pyramid by C++\n2 - This is a menu option\n3 - This will create an encrypted message\nQ- Quit\n\nEnter your choice: ";
+		std::cout << "P - Print numbers\nI - Pointer Solution\nA - Add a number\nM - Display mean of the numbers\nS - Display the smallest number\nL - Display the largest number\nW - Percent increase or decrease on number\n1 - Letter Pyramid by C++\n2 - This is a menu option\n3 - This will create an encrypted message\nQ- Quit\n\nEnter your choice: ";
 		std::cin >> option;
 		//TODO: add declarations for the rest of the methods in the file.
 		switch (option) {
@@ -253,6 +253,10 @@ void Header::menuOption() {
 		case 'a':
 		case 'A':
 			addNumberToVec(&vec);
+			break;
+		case 'w':
+		case 'W':
+			mathWithCpp();
 			break;
 		case 'm':
 		case 'M':
@@ -318,7 +322,14 @@ void Header::letterPyramid() {
 	}
 }
 void Header::mathWithCpp() {
-	std::cout << "nothing here yet";
+	float percentage;
+
+	std::cout << "Enter the percentage to increase or decrease by:\n";
+	std::cin >> percentage;
+
+	percentage = percentage / 100;
+
+	std::cout << percentage;
 }
 
 void Header::secretMessage() {
