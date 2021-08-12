@@ -7,6 +7,7 @@
 #include <array>//using array library
 #include "Header.h"
 
+//prints out array items and also combines both arrays
 void Header::pointerSolution() {
 	const size_t array1_size{ 5 };
 	const size_t array2_size{ 3 };
