@@ -6,7 +6,7 @@
 	class Header 
 	{
 	public:
-		//nothing here yet
+		//all prototypes below
 		void moneyChallenge();
 		void vectorFun();
 		void multiply(int);
