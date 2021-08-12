@@ -322,14 +322,17 @@ void Header::letterPyramid() {
 	}
 }
 void Header::mathWithCpp() {
-	float percentage;
+	float percentage{0.0};
+	int totalNum{ 0 };
 
 	std::cout << "Enter the percentage to increase or decrease by:\n";
 	std::cin >> percentage;
 
-	percentage = percentage / 100;
+	percentage = (percentage / 100) + 1;
 
 	std::cout << percentage;
+	//TODO: create the formula to do the increase or decrease by percentage
+
 }
 
 void Header::secretMessage() {
