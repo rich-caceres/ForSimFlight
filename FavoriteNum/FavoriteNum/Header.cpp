@@ -330,9 +330,9 @@ void Header::mathWithCpp() {
 
 	percentage = (percentage / 100) + 1;
 
-	std::cout << percentage;
+	std::cout << percentage << "\n";
 	
-	std::cout << "Enter the total amount to increase or decrease\n";
+	std::cout << "Enter the number needed to be calculated against percentage\n";
 	std::cin >> totalNum;
 	
 	std::cout << totalNum *  percentage<< "\n";
