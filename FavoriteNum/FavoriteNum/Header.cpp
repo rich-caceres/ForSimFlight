@@ -325,6 +325,8 @@ void Header::mathWithCpp() {
 	float percentage{0.0};
 	int totalNum{ 0 };
 
+	std::cout << std::setprecision(4);
+
 	std::cout << "Enter the percentage to increase or decrease by:\n";
 	std::cin >> percentage;
 
@@ -336,7 +338,7 @@ void Header::mathWithCpp() {
 	std::cin >> totalNum;
 	
 	std::cout << totalNum *  percentage<< "\n";
-
+		 
 	//Add all results to a vector
 
 }
