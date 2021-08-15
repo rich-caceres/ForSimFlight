@@ -339,7 +339,7 @@ void Header::mathWithCpp() {
 
 	total = totalNum * percentage;
 
-	//std::cout << std::setprecision(4);
+	std::cout << std::setprecision(4);
 	std::cout << total<< "\n";
 		 
 	//TODO: Add all results to a vector
