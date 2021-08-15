@@ -331,7 +331,9 @@ void Header::mathWithCpp() {
 	percentage = (percentage / 100) + 1;
 
 	std::cout << percentage;
-	//TODO: create the formula to do the increase or decrease by percentage
+	
+	std::cout << "Enter the totale amound to increase or decrease\n";
+	std::cin >> totalNum;
 
 }
 
