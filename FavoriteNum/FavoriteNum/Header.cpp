@@ -334,9 +334,7 @@ void Header::mathWithCpp() {
 	
 	std::cout << "Enter the number needed to be calculated against percentage\n";
 	std::cin >> totalNum;
-
-	std::cout << std::setprecision(4);
-	
+	//needs to return the amount with a precision of a decimal point of cents
 	std::cout << totalNum *  percentage<< "\n";
 		 
 	//Add all results to a vector
