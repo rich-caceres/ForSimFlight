@@ -332,8 +332,12 @@ void Header::mathWithCpp() {
 
 	std::cout << percentage;
 	
-	std::cout << "Enter the totale amound to increase or decrease\n";
+	std::cout << "Enter the total amount to increase or decrease\n";
 	std::cin >> totalNum;
+	
+	std::cout << totalNum *  percentage<< "\n";
+
+	//Add all results to a vector
 
 }
 
