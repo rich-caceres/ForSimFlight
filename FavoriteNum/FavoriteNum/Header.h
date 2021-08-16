@@ -28,6 +28,6 @@
 		void printAllNums(std::vector<int>* const);
 		void addNumberToVec(std::vector<int>*);
 		void meanNumbers(std::vector<int>* const);
-		unsigned long long fibonacci(unsigned long long n);
-		unsigned long long factorial(unsigned long long n);
+		unsigned long long fibonacci(unsigned long long n= 0);
+		unsigned long long factorial(unsigned long long n= 0);
 	};
