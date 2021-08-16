@@ -7,14 +7,16 @@
 #include <array>//using array library
 #include "Header.h"
 
-//prints out array items and also combines both arrays
+
 Header::Header() {
 	std::cout << "Creating the Header object to begin working with menu!" << std::endl;
 }
+
 Header::~Header() {
 	std::cout << "Header object will now be destroyed, thanks for working with this program!" << std::endl;
 }
 
+//prints out array items and also combines both arrays
 void Header::pointerSolution() {
 	const size_t array1_size{ 5 };
 	const size_t array2_size{ 3 };
