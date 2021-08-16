@@ -2,8 +2,10 @@
 #include<iostream>
 #include<string>
 
-Player::Player() {
+Player::Player(std::string set_name, int set_score)
+	:player_name{ set_name }, score{set_score} {
 //default constructor
+	std::cout << "New player has been created" << std::endl;
 }
 
 Player::~Player(){
