@@ -7,11 +7,12 @@
 #include <array>//using array library
 #include "Header.h"
 
-
+//default constructor method
 Header::Header() {
 	std::cout << "Creating the Header object to begin working with menu!" << std::endl;
 }
 
+//default destructor method
 Header::~Header() {
 	std::cout << "Header object will now be destroyed, thanks for working with this program!" << std::endl;
 }
