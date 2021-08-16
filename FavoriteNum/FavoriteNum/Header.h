@@ -7,6 +7,7 @@
 	{
 	public:
 		//all prototypes below
+		Header();
 		void moneyChallenge();
 		void vectorFun();
 		void multiply(int);

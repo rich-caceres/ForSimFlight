@@ -8,6 +8,10 @@
 #include "Header.h"
 
 //prints out array items and also combines both arrays
+Header::Header() {
+	std::cout << "Creating the Header object to begin working with menu!" << std::endl;
+}
+
 void Header::pointerSolution() {
 	const size_t array1_size{ 5 };
 	const size_t array2_size{ 3 };
