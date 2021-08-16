@@ -8,6 +8,7 @@
 	public:
 		//all prototypes below
 		Header();
+		~Header();
 		void moneyChallenge();
 		void vectorFun();
 		void multiply(int);

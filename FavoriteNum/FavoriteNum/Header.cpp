@@ -11,6 +11,9 @@
 Header::Header() {
 	std::cout << "Creating the Header object to begin working with menu!" << std::endl;
 }
+Header::~Header() {
+	std::cout << "Header object will now be destroyed, thanks for working with this program!" << std::endl;
+}
 
 void Header::pointerSolution() {
 	const size_t array1_size{ 5 };
