@@ -6,9 +6,11 @@
 	class Header 
 	{
 	public:
-		//all prototypes below
+		//default constructor
 		Header();
+		//defaults destructor
 		~Header();
+		//all prototypes
 		void moneyChallenge();
 		void vectorFun();
 		void multiply(int);
