@@ -291,7 +291,7 @@ void Header::menuOption() {
 			break;
 		case 'q':
 		case 'Q':
-			std::cout << "This quits program!";
+			std::cout << "This quits program!\n";
 			quit = true;
 			break;
 		default: std::cout << "Invalid input, please try again.\n";
