@@ -7,7 +7,6 @@ Player::Player(std::string set_name, int set_score)
 //default constructor
 	std::cout << "New player has been created" << std::endl;
 }
-
 Player::~Player(){
 //default destructor
 }

@@ -6,6 +6,7 @@
 #include <iomanip>//setting Precision
 #include <array>//using array library
 #include "Header.h"
+#include "Player.h"
 
 //default constructor method
 Header::Header() {
