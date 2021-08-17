@@ -9,6 +9,7 @@ Player::Player(std::string set_name, int set_score)
 }
 Player::~Player(){
 //default destructor
+	std::cout << "Player destructor executed"
 }
 
 std::string Player::getPlayerName() {
