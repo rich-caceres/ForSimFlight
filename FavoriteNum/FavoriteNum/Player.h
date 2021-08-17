@@ -9,6 +9,7 @@ private:
 public:
 	void setPlayerName(std::string newName);
 	void setPlayerScore(int newScore);
+	void increaseScore();
 	std::string getPlayerName();
 	int getPlayerScore();
 	//default constructor

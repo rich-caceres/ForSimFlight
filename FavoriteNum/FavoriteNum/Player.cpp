@@ -27,3 +27,7 @@ void Player::setPlayerName(std::string newPlayerName) {
 void Player::setPlayerScore(int newPlayerScore) {
 	score = newPlayerScore;
 }
+
+void Player::increaseScore() {
+	score++;
+}
