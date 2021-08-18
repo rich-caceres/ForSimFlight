@@ -2,11 +2,6 @@
 #include<iostream>
 #include<string>
 
-Player::Player() {
-	player_name = "No name here";
-	score = 0;
-}
-
 Player::Player(std::string set_name, int set_score)
 	:player_name{ set_name }, score{set_score} {
 //default constructor
