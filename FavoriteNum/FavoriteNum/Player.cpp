@@ -20,8 +20,8 @@ int Player::getPlayerScore() {
 	return score;
 }
 
-void Player::setPlayerName(std::string newPlayerName) {
-	player_name = newPlayerName;
+void Player::setPlayerName(std::string player_name) {
+	this->player_name = player_name;
 }
 
 void Player::setPlayerScore(int newPlayerScore) {
