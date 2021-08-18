@@ -8,5 +8,6 @@ private:
 	std::vector<Movie> movies;
 public:
 	void addMovie(Movie movie);
+	void displayAllMovies() const;
 };
 

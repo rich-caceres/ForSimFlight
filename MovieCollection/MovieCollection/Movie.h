@@ -11,5 +11,6 @@ public:
 	std::string getMovieName() const;
 	char getMovieRating() const;
 	int getNumWatched() const;
+
 };
 
