@@ -3,5 +3,9 @@
 
 class Movie
 {
+private:
+
+public:
+
 };
 
