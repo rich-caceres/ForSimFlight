@@ -12,11 +12,11 @@ Player::~Player(){
 	std::cout << "Player destructor executed" << std::endl;
 }
 
-std::string Player::getPlayerName() {
+std::string Player::getPlayerName() const {
 	return player_name;
 }
 
-int Player::getPlayerScore() {
+int Player::getPlayerScore() const {
 	return score;
 }
 
