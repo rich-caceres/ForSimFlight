@@ -31,3 +31,7 @@ void Player::setPlayerScore(int score) {
 void Player::increaseScore() {
 	score++;
 }
+int Player::displayActivePlayers(){
+
+	return active_players;
+}

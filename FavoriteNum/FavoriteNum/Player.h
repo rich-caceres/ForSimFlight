@@ -17,7 +17,6 @@ public:
 	Player(std::string name = "no name here", int score = 0);
 	//default destructor
 	~Player();
-
 	static int displayActivePlayers();
 };
 
