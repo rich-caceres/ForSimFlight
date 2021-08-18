@@ -6,10 +6,12 @@ Player::Player(std::string set_name, int set_score)
 	:player_name{ set_name }, score{set_score} {
 //default constructor
 	std::cout << "New player has been created" << std::endl;
+	++active_players;
 }
 Player::~Player(){
 //default destructor
 	std::cout << "Player destructor executed" << std::endl;
+	--active_players;
 }
 
 std::string Player::getPlayerName() const {
