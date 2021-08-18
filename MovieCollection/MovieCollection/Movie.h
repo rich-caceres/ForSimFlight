@@ -4,8 +4,11 @@
 class Movie
 {
 private:
-
+	std::string movie_name;
+	char movie_rating;
+	int num_watched;
 public:
+
 
 };
 
