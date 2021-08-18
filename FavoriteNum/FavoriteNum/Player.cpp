@@ -24,8 +24,8 @@ void Player::setPlayerName(std::string player_name) {
 	this->player_name = player_name;
 }
 
-void Player::setPlayerScore(int newPlayerScore) {
-	score = newPlayerScore;
+void Player::setPlayerScore(int score) {
+	this->score = score;
 }
 
 void Player::increaseScore() {
