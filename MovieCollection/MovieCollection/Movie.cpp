@@ -4,11 +4,11 @@
 #include <string>
 
 Movie::Movie() 
-	: movie_name{ "No name added" }, movie_rating{ '\0' }, num_watched{0} {
+	: movie_name{ "No name added" }, movie_rating{ "No Rating/Not Known"}, num_watched{0} {
 	std::cout << "Please add the name of the movie:\n";
 	std::getline(std::cin, movie_name);
 	std::cout << "Please add the movie rating: \n";
-	movie_rating = getchar();
+	std::getline(std::cin, movie_rating);
 	std::cout << "Please add the number of times watched: \n";
 	std::cin >> num_watched;
 }
@@ -17,7 +17,7 @@ std::string Movie::getMovieName() const{
 	return movie_name;
 }
 
-char Movie::getMovieRating() const {
+std::string Movie::getMovieRating() const {
 	return movie_rating;
 }
 

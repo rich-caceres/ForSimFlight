@@ -5,11 +5,11 @@ class Movie
 {
 private:
 	std::string movie_name;
-	char movie_rating;
+	std::string movie_rating;
 	int num_watched;
 public:
 	std::string getMovieName() const;
-	char getMovieRating() const;
+	std::string getMovieRating() const;
 	int getNumWatched() const;
 	void setMovieName();
 	void setMovieRating();
