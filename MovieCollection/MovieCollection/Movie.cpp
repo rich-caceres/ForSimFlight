@@ -23,9 +23,9 @@ int Movie::getNumWatched() const {
 	return num_watched;
 }
 
-void Movie::displayMovie(Movie movie) const {
-	std::cout << "Movie Titel: " << movie.getMovieName() << "\n" 
-		<< "Rating: " << movie.getMovieRating() << "\n" 
-		<< "Times watched: " << movie.getNumWatched() << std::endl;
+void Movie::displayMovie() const {
+	std::cout << "Movie Titel: " << this->getMovieName() << "\n" 
+		<< "Rating: " << this->getMovieRating() << "\n" 
+		<< "Times watched: " << this->getNumWatched() << std::endl;
 }
 
