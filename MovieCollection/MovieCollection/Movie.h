@@ -8,6 +8,7 @@ private:
 	char movie_rating;
 	int num_watched;
 public:
+	Movie();
 	std::string getMovieName() const;
 	char getMovieRating() const;
 	int getNumWatched() const;
