@@ -14,7 +14,7 @@ public:
 	void setMovieName();
 	void setMovieRating();
 	void setNumWatched();
-	void displayMovie();
+	void displayMovie(Movie movie) const;
 	//constructors
 	Movie();
 	Movie(std::string name, char movie_rating, int num_watched);
