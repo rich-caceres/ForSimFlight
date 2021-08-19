@@ -21,7 +21,6 @@ char Movie::getMovieRating() const {
 
 int Movie::getNumWatched() const {
 	return num_watched;
-
 }
 
 void Movie::displayMovie() {
