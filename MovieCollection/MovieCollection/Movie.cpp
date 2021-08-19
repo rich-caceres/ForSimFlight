@@ -11,5 +11,20 @@ Movie::Movie()
 	std::cin >> num_watched;
 }
 
-Movie::
+std::string Movie::getMovieName() const{
+
+}
+
+char Movie::getMovieRating() const {
+
+}
+
+int Movie::getNumWatched() const {
+
+}
+
+void Movie::displayMovie() {
+
+
+}
 
