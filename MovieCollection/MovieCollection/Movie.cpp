@@ -12,14 +12,15 @@ Movie::Movie()
 }
 
 std::string Movie::getMovieName() const{
-
+	return movie_name;
 }
 
 char Movie::getMovieRating() const {
-
+	return movie_rating;
 }
 
 int Movie::getNumWatched() const {
+	return num_watched;
 
 }
 
