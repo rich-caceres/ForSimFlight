@@ -7,8 +7,8 @@
 
 int main()
 {
-	Movie movie();
-
+	Movie movie;
+	movie.displayMovie();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -1,8 +1,7 @@
 #include "Movie.h"
 #include <iostream>
 
-Movie::Movie() 
-	:movie_name{ "No name added" }, movie_rating{ '\0' }, num_watched{0} {
+Movie::Movie() {
 	std::cout << "Please add the name of the movie:\n";
 	std::cin >> movie_name;
 	std::cout << "Please add the movie rating: \n";
@@ -29,3 +28,6 @@ void Movie::displayMovie() const {
 		<< "Times watched: " << this->getNumWatched() << std::endl;
 }
 
+Movie::~Movie() {
+	std::cout << "Destructor called";
+}
