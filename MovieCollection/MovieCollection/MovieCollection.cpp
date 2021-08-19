@@ -2,10 +2,13 @@
 //
 
 #include <iostream>
+#include "Movie.h"
+#include "Movies.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Movie movie();
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
