@@ -7,7 +7,7 @@ Movie::Movie()
 	std::cin >> movie_name;
 	std::cout << "Please add the movie rating: \n";
 	std::cin >> movie_rating;
-	
-	num_watched = 0;
+	std::cout << "Please add the number of times watched: \n";
+	std::cin >> num_watched;
 }
 
