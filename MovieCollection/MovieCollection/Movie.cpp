@@ -10,7 +10,6 @@ Movie::Movie()
 	std::cout << "Please add the movie rating: \n";
 	movie_rating = getchar();
 	std::cout << "Please add the number of times watched: \n";
-	//std::cin.clear();
 	std::cin >> num_watched;
 }
 
