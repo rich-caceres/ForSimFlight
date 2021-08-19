@@ -8,12 +8,15 @@ private:
 	char movie_rating;
 	int num_watched;
 public:
-	Movie();
 	std::string getMovieName() const;
 	char getMovieRating() const;
 	int getNumWatched() const;
 	void setMovieName();
 	void setMovieRating();
 	void setNumWatched();
+	//constructors
+	Movie();
+	Movie(std::string name, char movie_rating, int num_watched);
+	//destructors
 };
 
