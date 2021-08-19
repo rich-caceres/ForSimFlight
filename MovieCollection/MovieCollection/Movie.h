@@ -18,5 +18,6 @@ public:
 	Movie();
 	Movie(std::string name, char movie_rating, int num_watched);
 	//destructors
+	~Movie();
 };
 
