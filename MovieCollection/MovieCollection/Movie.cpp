@@ -12,7 +12,6 @@ Movie::~Movie() {
 	std::cout << "Destructor called\n";
 }
 
-
 std::string Movie::getMovieName() const{
 	return movie_name;
 }
@@ -26,7 +25,6 @@ int Movie::getNumWatched() const {
 }
 
 void Movie::setMovieName(std::string movie_name) {
-
 	this->movie_name = movie_name;
 }
 

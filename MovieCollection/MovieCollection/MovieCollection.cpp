@@ -21,9 +21,7 @@ int main()
 		std::cin >> answer;
 		if (answer == 'n') addMovie = false;
 	}
-
 	MovieCollection.displayAllMovies();
-
 }
 
 Movie createMovie() {
