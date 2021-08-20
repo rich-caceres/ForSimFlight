@@ -10,11 +10,18 @@ Movie createMovie();
 
 int main()
 {
+	bool addMovie = true;
 	Movies MovieCollection;
-	Movie movie = createMovie();
-	movie.displayMovie();
+	//Movie movie = createMovie();
+	//movie.displayMovie();
+	while (addMovie) {
+		char answer;
+		MovieCollection.addMovie(createMovie());
+		std::cout << "Would you like to add another movie? y/n";
+		std::cin >> answer;
+		if (answer == 'n') addMovie = false;
+	}
 
-	MovieCollection.addMovie(createMovie());
 	MovieCollection.displayAllMovies();
 
 }
@@ -25,7 +32,7 @@ Movie createMovie() {
 	int num_watched{ 0 };
 
 	std::cout << "Please add the name of the movie:\n";
-	std::getline(std::cin, movie_name);
+	std::getline(std::cin >> std::ws, movie_name);
 	std::cout << "Please add the movie rating: \n";
 	std::getline(std::cin, movie_rating);
 	std::cout << "Please add the number of times watched: \n";
