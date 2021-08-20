@@ -10,8 +10,13 @@ Movie createMovie();
 
 int main()
 {
+	Movies MovieCollection;
 	Movie movie = createMovie();
 	movie.displayMovie();
+
+	MovieCollection.addMovie(createMovie());
+	MovieCollection.displayAllMovies();
+
 }
 
 Movie createMovie() {
