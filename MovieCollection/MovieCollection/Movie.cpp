@@ -3,14 +3,9 @@
 #include <sstream>
 #include <string>
 
-Movie::Movie() 
-	: movie_name{ "No name added" }, movie_rating{ "No Rating/Not Known"}, num_watched{0} {
-	std::cout << "Please add the name of the movie:\n";
-	std::getline(std::cin, movie_name);
-	std::cout << "Please add the movie rating: \n";
-	std::getline(std::cin, movie_rating);
-	std::cout << "Please add the number of times watched: \n";
-	std::cin >> num_watched;
+Movie::Movie(std::string movie_name, std::string movie_rating, int num_watched)
+	: movie_name{ movie_name }, movie_rating{ movie_rating }, num_watched{ num_watched } {
+	std::cout << "Movie created!";
 }
 
 std::string Movie::getMovieName() const{
