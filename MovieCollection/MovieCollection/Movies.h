@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <string>
 #include "Movie.h"
 
 class Movies
@@ -9,5 +10,6 @@ private:
 public:
 	void addMovie(Movie movie);
 	void displayAllMovies() const;
+	void checkForMatchingName(std::string movieName) const;
 };
 

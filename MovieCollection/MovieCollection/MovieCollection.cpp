@@ -30,9 +30,9 @@ Movie createMovie() {
 
 	std::cout << "Please add the name of the movie:\n";
 	std::getline(std::cin >> std::ws, movie_name);
-	std::cout << "Please add the movie rating: \n";
+	std::cout << "Please add the movie rating:\n";
 	std::getline(std::cin, movie_rating);
-	std::cout << "Please add the number of times watched: \n";
+	std::cout << "Please add the number of times watched:\n";
 	std::cin >> num_watched;
 	Movie movie(movie_name, movie_rating, num_watched);
 
