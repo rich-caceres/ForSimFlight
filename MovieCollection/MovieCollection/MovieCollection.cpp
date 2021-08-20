@@ -12,8 +12,7 @@ int main()
 {
 	bool addMovie = true;
 	Movies MovieCollection;
-	//Movie movie = createMovie();
-	//movie.displayMovie();
+
 	while (addMovie) {
 		char answer;
 		MovieCollection.addMovie(createMovie());
