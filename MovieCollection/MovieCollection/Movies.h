@@ -10,6 +10,6 @@ private:
 public:
 	void addMovie(Movie movie);
 	void displayAllMovies() const;
-	void checkForMatchingName(std::string movieName) const;
+	bool checkForMatchingName(std::string movieName) const;
 };
 

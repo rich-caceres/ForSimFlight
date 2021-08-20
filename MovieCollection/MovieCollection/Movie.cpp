@@ -36,6 +36,10 @@ void Movie::setNumWatched(int num_watched) {
 	this->num_watched = num_watched;
 }
 
+void Movie::increaseNumWatched() {
+	++num_watched;
+}
+
 void Movie::displayMovie() const {
 	std::cout << "Movie Titel: " << this->getMovieName() << "\n" 
 		<< "Rating: " << this->getMovieRating() << "\n" 
