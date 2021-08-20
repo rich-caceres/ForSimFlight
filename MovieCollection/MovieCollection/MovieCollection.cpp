@@ -6,6 +6,8 @@
 #include "Movie.h"
 #include "Movies.h"
 
+Movie createMovie();
+
 int main()
 {
 	std::string movie_name{""};
@@ -22,6 +24,21 @@ int main()
 	movie.displayMovie();
 }
 
+Movie createMovie() {
+	std::string movie_name{ "" };
+	std::string movie_rating{ "" };
+	int num_watched{ 0 };
+
+	std::cout << "Please add the name of the movie:\n";
+	std::getline(std::cin, movie_name);
+	std::cout << "Please add the movie rating: \n";
+	std::getline(std::cin, movie_rating);
+	std::cout << "Please add the number of times watched: \n";
+	std::cin >> num_watched;
+	Movie movie(movie_name, movie_rating, num_watched);
+
+	return movie;
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
