@@ -30,6 +30,14 @@ void Movie::setMovieName(std::string movie_name) {
 	this->movie_name = movie_name;
 }
 
+void Movie::setMovieRating() {
+
+}
+
+void Movie::setNumWatched() {
+
+}
+
 void Movie::displayMovie() const {
 	std::cout << "Movie Titel: " << this->getMovieName() << "\n" 
 		<< "Rating: " << this->getMovieRating() << "\n" 
