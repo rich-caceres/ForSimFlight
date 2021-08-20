@@ -2,6 +2,7 @@
 #include "Movie.h"
 #include <iostream>
 #include <vector>
+#include <string>
 
 void Movies::addMovie(Movie movie) {
 	movies.push_back(movie);
@@ -14,4 +15,5 @@ void Movies::displayAllMovies() const{
 	}
 }
 
-void Movies::checkForMatchingName()
+void Movies::checkForMatchingName() const {
+}
