@@ -11,7 +11,7 @@ public:
 	std::string getMovieName() const;
 	std::string getMovieRating() const;
 	int getNumWatched() const;
-	void setMovieName();
+	void setMovieName(std::string movie_name);
 	void setMovieRating();
 	void setNumWatched();
 	void displayMovie() const;

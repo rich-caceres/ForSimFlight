@@ -10,9 +10,7 @@ Movie createMovie();
 
 int main()
 {
-
 	Movie movie = createMovie();
-
 	movie.displayMovie();
 }
 
