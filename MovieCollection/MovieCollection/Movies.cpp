@@ -18,11 +18,11 @@ void Movies::displayAllMovies() const{
 	}
 }
 
-bool Movies::checkForMatchingName(std::string movieName) const {
-	for (Movie movie : movies) {
-		if (movie.getMovieName() == movieName) {
-			std::cout << "Movie already in collection. Times watched increased by 1.\n";
-			movie.increaseNumWatched();
+bool Movies::checkForMatchingName(std::string movieName){
+	for (size_t i = 0; i < movies.size(); ++i) {
+		if (movies[i].getMovieName() == movieName) {
+			std::cout << "Movie already in collection. Times watched increased by 1.";
+			movies[i].increaseNumWatched();
 			return true;
 		}
 	}

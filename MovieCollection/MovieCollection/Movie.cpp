@@ -3,6 +3,7 @@
 #include <sstream>
 #include <string>
 
+
 Movie::Movie(std::string movie_name, std::string movie_rating, int num_watched)
 	: movie_name{ movie_name }, movie_rating{ movie_rating }, num_watched{ num_watched } {
 	std::cout << "Movie created!\n";
@@ -37,7 +38,7 @@ void Movie::setNumWatched(int num_watched) {
 }
 
 void Movie::increaseNumWatched() {
-	++num_watched;
+	++this->num_watched;
 }
 
 void Movie::displayMovie() const {
