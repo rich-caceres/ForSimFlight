@@ -17,7 +17,7 @@ void Movies::displayAllMovies() const{
 		std::cout << "Sorry no movies to display"<<std::endl;
 	}
 	else {
-		for (Movie movie : movies) {
+		for (const auto movie : movies) {
 			movie.displayMovie();
 		}
 	}
