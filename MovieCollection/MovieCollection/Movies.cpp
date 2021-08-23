@@ -13,8 +13,13 @@ void Movies::addMovie(Movie movie) {
 }
 
 void Movies::displayAllMovies() const{
-	for (Movie movie : movies) {
-		movie.displayMovie();
+	if (movies.size() == 0) {
+		std::cout << "Sorry no movies to display"<<std::endl;
+	}
+	else {
+		for (Movie movie : movies) {
+			movie.displayMovie();
+		}
 	}
 }
 
