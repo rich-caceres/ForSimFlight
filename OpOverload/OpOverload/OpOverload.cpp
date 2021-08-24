@@ -1,4 +1,8 @@
-
+/* Author: Richard Caceres
+* 
+* Practice program using copy constructors to create a string using c style strings. Used strcpy_s to copy the string instead of strcpy for secure purposes.
+*
+*/
 
 #include <iostream>
 #include "MyString.h"
