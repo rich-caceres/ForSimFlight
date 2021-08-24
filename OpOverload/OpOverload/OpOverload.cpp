@@ -1,6 +1,7 @@
 /* Author: Richard Caceres
 * 
-* Practice program using copy constructors to create a string using c style strings. Used strcpy_s to copy the string instead of strcpy for secure purposes.
+* Practice program using copy constructors to create a string using c style strings. Used strcpy_s to copy the string 
+* instead of strcpy for security purposes. Using operator overload to create a deep copy instead of using a copy constructor.
 *
 */
 
