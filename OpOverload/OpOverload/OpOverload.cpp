@@ -14,6 +14,9 @@ int main()
 	MyString rich("Rich");
 	MyString richie(rich);
 
+	rich = MyString{ "RichieRich" };
+	rich.display();
+
 	richie = rich;
 
 	empty.display();

@@ -27,6 +27,12 @@ MyString::MyString(const MyString &source)
 	strcpy_s(str, std::strlen(source.str) + 1,source.str);
 
 }
+
+MyString::MyString(MyString &&source)
+	:str{source.str} {
+	source.str = nullptr;
+}
+
 MyString::~MyString() {
 	delete [] str;
 }
@@ -56,4 +62,17 @@ MyString& MyString::operator= (const MyString& rhs) {
 
 	return *this;
 
+}
+
+MyString& MyString::operator=(MyString&& rhs) {
+
+	if (this == &rhs)
+		return *this;
+
+	delete[] str;
+	str = rhs.str;
+
+	rhs.str = nullptr;
+
+	return *this;
 }
