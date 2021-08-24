@@ -32,10 +32,8 @@ MyString::~MyString() {
 }
 
 void MyString::display() const {
-	for (size_t i = 0; i < sizeof(str); i++) {
-		std::cout << str[i];
-	}
-	std::cout << std::endl;
+	
+	std::cout << str << " : " << get_length() << std::endl;
 }
 
 int MyString::get_length() const {
