@@ -30,6 +30,7 @@ MyString::MyString(const MyString &source)
 
 MyString::MyString(MyString &&source) noexcept
 	:str{source.str} {
+	std::cout << "Move constructor used\n";
 	source.str = nullptr;
 }
 
@@ -64,7 +65,9 @@ MyString& MyString::operator= (const MyString& rhs) {
 
 }
 
-MyString& MyString::operator=(MyString&& rhs) {
+MyString& MyString::operator=(MyString&& rhs) noexcept {
+
+	std::cout << "Move operator used\n";
 
 	if (this == &rhs)
 		return *this;
