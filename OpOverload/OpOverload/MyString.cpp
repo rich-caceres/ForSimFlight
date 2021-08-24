@@ -41,3 +41,7 @@ void MyString::display() const {
 int MyString::get_length() const {
 	return std::strlen(str);
 }
+
+const char *MyString::get_str() const{
+	return str;
+}
