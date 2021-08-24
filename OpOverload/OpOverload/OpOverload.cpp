@@ -13,6 +13,8 @@ int main()
 	MyString rich("Rich");
 	MyString richie(rich);
 
+	richie = rich;
+
 	empty.display();
 	rich.display();
 	richie.display();
