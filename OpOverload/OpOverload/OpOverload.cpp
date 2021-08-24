@@ -11,6 +11,6 @@ int main()
 
 	empty.display();
 	rich.display();
-	rich.display();
+	richie.display();
 }
 
