@@ -4,8 +4,9 @@
 #include <string>
 
 
-Movie::Movie(std::string movie_name, std::string movie_rating, int num_watched)
-	: movie_name{ movie_name }, movie_rating{ movie_rating }, num_watched{ num_watched } {
+Movie::Movie(std::string mov_name, std::string mov_rating, int num_watch)
+	: movie_name{ mov_name}, movie_rating{ mov_rating }, num_watched{ num_watch } {
+
 	std::cout << "Movie created!\n";
 }
 
@@ -13,15 +14,15 @@ Movie::~Movie() {
 	std::cout << "Destructor called\n";
 }
 
-std::string Movie::getMovieName() const{
+const std::string Movie::getMovieName() const{
 	return movie_name;
 }
 
-std::string Movie::getMovieRating() const {
+const std::string Movie::getMovieRating() const {
 	return movie_rating;
 }
 
-int Movie::getNumWatched() const {
+const int Movie::getNumWatched() const {
 	return num_watched;
 }
 
