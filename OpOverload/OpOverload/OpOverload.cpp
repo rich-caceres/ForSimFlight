@@ -5,5 +5,12 @@
 
 int main()
 {
+	MyString empty; //empty string
+	MyString rich("Rich");
+	MyString richie(rich);
+
+	empty.display();
+	rich.display();
+	rich.display();
 }
 
