@@ -28,7 +28,7 @@ MyString::MyString(const MyString &source)
 
 }
 
-MyString::MyString(MyString &&source)
+MyString::MyString(MyString &&source) noexcept
 	:str{source.str} {
 	source.str = nullptr;
 }
