@@ -18,6 +18,8 @@ public:
 	void displayMovie() const;
 	//constructors
 	Movie(std::string movie_name, std::string movie_rating, int num_watched);
+	Movie(const Movie& movie);//copy constructor
+	Movie(Movie&& movie);//move constructor
 	//destructors
 	~Movie();
 };
