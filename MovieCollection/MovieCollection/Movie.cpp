@@ -10,6 +10,11 @@ Movie::Movie(std::string mov_name, std::string mov_rating, int num_watch)
 	std::cout << "Movie created!\n";
 }
 
+Movie::Movie(const Movie& movie) 
+	: movie_name{ movie.movie_name }, movie_rating{ movie.movie_rating }, num_watched{movie.num_watched} {
+	std::cout << "copy constructor called";
+}
+
 Movie::~Movie() {
 	std::cout << "Destructor called\n";
 }
