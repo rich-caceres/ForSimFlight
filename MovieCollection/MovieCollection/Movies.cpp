@@ -5,13 +5,10 @@
 #include <string>
 
 void Movies::addMovie(Movie movie) {
-	
-
 	if (!checkForMatchingName(*movie.getMovieName())) {
 		movies.push_back(movie);
 	}
 }
-
 
 void Movies::displayAllMovies() const{
 	if (movies.size() == 0) {

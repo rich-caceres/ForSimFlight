@@ -24,7 +24,6 @@ Movie::Movie(std::string *mov_name, std::string *mov_rating, int *num_watch)
 	else {
 		num_watched = new int(*num_watch);
 	}
-
 	std::cout << "Movie created!\n";
 }
 
