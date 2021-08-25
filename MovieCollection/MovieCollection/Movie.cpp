@@ -15,6 +15,14 @@ Movie::Movie(const Movie& movie)
 	std::cout << "copy constructor called";
 }
 
+Movie::Movie(Movie&& movie)
+	: movie_name{ movie.movie_name }, movie_rating{ movie.movie_rating }, num_watched{ movie.num_watched }{
+	std::cout << "move constructor called";
+	movie.movie_name = nullptr;
+	movie.movie_rating = nullptr;
+	movie.num_watched = nullptr;
+}
+
 Movie::~Movie() {
 	std::cout << "Destructor called\n";
 }
