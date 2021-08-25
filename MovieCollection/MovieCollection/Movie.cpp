@@ -4,8 +4,26 @@
 #include <string>
 
 
-Movie::Movie(std::string mov_name, std::string mov_rating, int num_watch)
-	: movie_name{ mov_name}, movie_rating{ mov_rating }, num_watched{ num_watch } {
+Movie::Movie(std::string *mov_name, std::string *mov_rating, int *num_watch)
+	: movie_name{nullptr}, movie_rating{ nullptr }, num_watched{ nullptr } {
+	if (mov_name == nullptr) {
+		*movie_name = "this is null";
+	}
+	else {
+		movie_name = new std::string(mov_name);
+	}
+	if (mov_rating == nullptr) {
+		*movie_rating = "this is null";
+	}
+	else {
+		movie_rating = new std::string(mov_rating);
+	}
+	if (num_watch == nullptr) {
+		*num_watch = 0;
+	}
+	else {
+		num_watched = new int[num_watch];
+	}
 
 	std::cout << "Movie created!\n";
 }

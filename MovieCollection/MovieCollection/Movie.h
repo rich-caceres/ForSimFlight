@@ -4,9 +4,9 @@
 class Movie
 {
 private:
-	std::string movie_name;
-	std::string movie_rating;
-	int num_watched;
+	std::string* movie_name;
+	std::string* movie_rating;
+	int* num_watched;
 public:
 	const std::string getMovieName() const;
 	const std::string getMovieRating() const;
@@ -17,7 +17,7 @@ public:
 	void setNumWatched(int num_watched);
 	void displayMovie() const;
 	//constructors
-	Movie(std::string movie_name, std::string movie_rating, int num_watched);
+	Movie(std::string *movie_name, std::string *movie_rating, int *num_watched);
 	Movie(const Movie& movie);//copy constructor
 	Movie(Movie&& movie);//move constructor
 	//destructors
