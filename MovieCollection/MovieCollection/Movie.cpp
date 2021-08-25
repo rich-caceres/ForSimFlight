@@ -74,7 +74,7 @@ void Movie::increaseNumWatched() {
 }
 
 void Movie::displayMovie() const {
-	std::cout << "Movie Titel: " << *this->getMovieName() << "\n" 
+	std::cout << "Movie Title: " << *this->getMovieName() << "\n" 
 		<< "Rating: " << *this->getMovieRating() << "\n" 
 		<< "Times watched: " << *this->getNumWatched() << std::endl;
 }

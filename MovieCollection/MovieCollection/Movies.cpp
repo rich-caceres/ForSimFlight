@@ -18,8 +18,11 @@ void Movies::displayAllMovies() const{
 		std::cout << "Sorry no movies to display"<<std::endl;
 	}
 	else {
+		int movieCount{ 1 };
 		for (const auto movie : movies) {
+			std::cout << "======================= "<< movieCount << " =======================" << std::endl;
 			movie.displayMovie();
+			++movieCount;
 		}
 	}
 }
@@ -27,7 +30,7 @@ void Movies::displayAllMovies() const{
 bool Movies::checkForMatchingName(std::string movieName){
 	for (size_t i = 0; i < movies.size(); ++i) {
 		if (*movies[i].getMovieName() == movieName) {
-			std::cout << "Movie already in collection. Times watched increased by 1.";
+			std::cout << "Movie already in collection. Times watched increased by 1.\n";
 			movies[i].increaseNumWatched();
 			return true;
 		}
