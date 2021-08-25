@@ -70,7 +70,7 @@ void Movie::setNumWatched(int *num_watched) {
 }
 
 void Movie::increaseNumWatched() {
-	++this->num_watched;
+	++*this->num_watched;
 }
 
 void Movie::displayMovie() const {
