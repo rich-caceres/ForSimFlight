@@ -15,8 +15,8 @@ int main()
 
 	while (addMovie) {
 		char answer;
-		Movie movie(createMovie());
-		MovieCollection.addMovie(movie);
+		//Movie movie(createMovie());
+		MovieCollection.addMovie(createMovie());
 		std::cout << "Would you like to add another movie? y/n";
 		std::cin >> answer;
 		if (answer == 'n') addMovie = false;
@@ -25,9 +25,9 @@ int main()
 }
 
 Movie createMovie() {
-	std::string movie_name{};
-	std::string movie_rating{};
-	int num_watched{ 0 };
+	std::string movie_name{""};
+	std::string movie_rating{""};
+	int num_watched{0};
 
 	std::cout << "Please add the name of the movie:\n";
 	std::getline(std::cin >> std::ws, movie_name);
@@ -35,7 +35,7 @@ Movie createMovie() {
 	std::getline(std::cin, movie_rating);
 	std::cout << "Please add the number of times watched:\n";
 	std::cin >> num_watched;
-	Movie movie(movie_name, movie_rating, num_watched);
+	Movie movie(&movie_name, &movie_rating, &num_watched);
 
 	return movie;
 }

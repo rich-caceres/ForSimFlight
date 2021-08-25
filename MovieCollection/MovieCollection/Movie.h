@@ -8,13 +8,13 @@ private:
 	std::string* movie_rating;
 	int* num_watched;
 public:
-	const std::string getMovieName() const;
-	const std::string getMovieRating() const;
-	const int getNumWatched() const;
+	const std::string *getMovieName() const;
+	const std::string *getMovieRating() const;
+	const int *getNumWatched() const;
 	void increaseNumWatched();
-	void setMovieName(std::string movie_name);
-	void setMovieRating(std::string movie_rating);
-	void setNumWatched(int num_watched);
+	void setMovieName(std::string *movie_name);
+	void setMovieRating(std::string *movie_rating);
+	void setNumWatched(int *num_watched);
 	void displayMovie() const;
 	//constructors
 	Movie(std::string *movie_name, std::string *movie_rating, int *num_watched);
