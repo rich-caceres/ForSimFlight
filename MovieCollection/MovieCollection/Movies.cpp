@@ -20,7 +20,7 @@ void Movies::displayAllMovies() const{
 	else {
 		int movieCount{ 1 };
 		for (const auto movie : movies) {
-			std::cout << "======================= "<< movieCount << " =======================" << std::endl;
+			std::cout << "====================== "<< movieCount << " =======================" << std::endl;
 			movie.displayMovie();
 			++movieCount;
 		}
