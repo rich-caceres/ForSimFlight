@@ -4,6 +4,8 @@ class MyString
 	//friend overloaded operators as global methods
 	friend bool operator==(const MyString& lhs, const MyString& rhs);
 	friend MyString operator-(const MyString& obj);
+	friend bool operator<(const MyString& lhs, const MyString& rhs);
+	friend MyString operator*(const MyString& obj);
 	friend MyString operator+(const MyString& lhs, const MyString& rhs);
 	friend std::ostream& operator<<(std::ostream& os, const MyString& rhs);
 	friend std::istream& operator>>(std::istream& in, MyString& rhs);
