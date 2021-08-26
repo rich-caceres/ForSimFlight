@@ -116,6 +116,19 @@ bool operator>(const MyString& lhs, const MyString& rhs) {
 	return (std::strlen(lhs.str) > std::strlen(rhs.str));
 }
 
+MyString operator*(const MyString &obj, int numOfTimes) {
+	char* buff = new char[(std::strlen(obj.str) * numOfTimes) + 1];
+	strcpy_s(buff, std::strlen(obj.str) + 1, obj.str);
+
+	for (int i = 1; i < numOfTimes; i++)
+		strcat_s(buff, (std::strlen(obj.str) * numOfTimes) + 1, obj.str);
+
+	MyString temp{ buff };
+	delete[] buff;
+
+	return temp;
+}
+
 //overloaded insertion operator
 std::ostream& operator<<(std::ostream& os, const MyString& rhs) {
 	os << rhs.str;
@@ -129,3 +142,4 @@ std::istream& operator>>(std::istream& in, MyString& rhs) {
 	delete[] buff;
 	return in;
 }
+

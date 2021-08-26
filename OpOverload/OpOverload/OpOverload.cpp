@@ -15,8 +15,10 @@ int main()
 	MyString richie(rich);
 	std::cout << std::boolalpha;
 	std::cout << (rich == richie) << std::endl;
+	rich = rich * 3;
 	rich = MyString{ "RichieRich" };
 	rich.display();
+	
 
 	richie = rich;
 
