@@ -13,7 +13,8 @@ int main()
 	MyString empty; //empty string
 	MyString rich("Rich");
 	MyString richie(rich);
-
+	std::cout << std::boolalpha;
+	std::cout << (rich == richie) << std::endl;
 	rich = MyString{ "RichieRich" };
 	rich.display();
 

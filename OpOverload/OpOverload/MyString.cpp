@@ -28,7 +28,7 @@ MyString::MyString(const MyString &source)
 
 }
 
-MyString::MyString(MyString &&source) noexcept
+MyString::MyString(MyString &&source)
 	:str{source.str} {
 	std::cout << "Move constructor used\n";
 	source.str = nullptr;
@@ -65,7 +65,7 @@ MyString& MyString::operator= (const MyString& rhs) {
 
 }
 
-MyString& MyString::operator=(MyString&& rhs) noexcept {
+MyString& MyString::operator=(MyString&& rhs) {
 
 	std::cout << "Move operator used\n";
 
@@ -78,4 +78,33 @@ MyString& MyString::operator=(MyString&& rhs) noexcept {
 	rhs.str = nullptr;
 
 	return *this;
+}
+
+//Equality
+bool operator==(const MyString& lhs, const MyString& rhs) {
+	return (std::strcmp(lhs.str, rhs.str) == 0);
+}
+
+//Make lowercase
+MyString operator-(const MyString& obj) {
+	char* buff = new char[std::strlen(obj.str) + 1];
+	strcpy_s(buff, std::strlen(obj.str) + 1, obj.str);
+
+	for (size_t i = 0; i < std::strlen(buff); i++) 
+		buff[i] = std::tolower(buff[i]);
+	
+	MyString temp{ buff };
+	delete[] buff;
+	return temp;
+}
+
+//concat
+
+MyString operator+(const MyString& lhs, const MyString& rhs) {
+	char* buff = new char[std::strlen(lhs.str) + std::strlen(rhs.str) + 1];
+	strcpy_s(buff, std::strlen(lhs.str) + 1, lhs.str);
+	strcat_s(buff, std::strlen(rhs.str) + 1, rhs.str);
+	MyString temp{ buff };
+	delete[] buff;
+	return temp;
 }
