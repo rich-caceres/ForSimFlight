@@ -5,6 +5,7 @@ class MyString
 	friend bool operator==(const MyString& lhs, const MyString& rhs);
 	friend MyString operator-(const MyString& obj);
 	friend bool operator<(const MyString& lhs, const MyString& rhs);
+	friend bool operator>(const MyString& lhs, const MyString& rhs);
 	friend MyString operator*(const MyString& obj);
 	friend MyString operator+(const MyString& lhs, const MyString& rhs);
 	friend std::ostream& operator<<(std::ostream& os, const MyString& rhs);

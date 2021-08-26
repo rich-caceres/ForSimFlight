@@ -108,6 +108,14 @@ MyString operator+(const MyString& lhs, const MyString& rhs) {
 	return temp;
 }
 
+bool operator<(const MyString& lhs, const MyString &rhs) {
+	return (std::strlen(lhs.str) < std::strlen(rhs.str));
+}
+
+bool operator>(const MyString& lhs, const MyString& rhs) {
+	return (std::strlen(lhs.str) > std::strlen(rhs.str));
+}
+
 //overloaded insertion operator
 std::ostream& operator<<(std::ostream& os, const MyString& rhs) {
 	os << rhs.str;
