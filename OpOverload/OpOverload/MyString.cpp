@@ -99,7 +99,6 @@ MyString operator-(const MyString& obj) {
 }
 
 //concat
-
 MyString operator+(const MyString& lhs, const MyString& rhs) {
 	char* buff = new char[std::strlen(lhs.str) + std::strlen(rhs.str) + 1];
 	strcpy_s(buff, std::strlen(lhs.str) + 1, lhs.str);
