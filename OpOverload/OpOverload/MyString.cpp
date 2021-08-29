@@ -108,6 +108,15 @@ MyString operator+(const MyString& lhs, const MyString& rhs) {
 	return temp;
 }
 
+MyString operator+=(const MyString& lhs, const MyString& rhs) {
+	char* buff = new char[std::strlen(lhs.str) + std::strlen(rhs.str) + 1];
+	strcpy_s(buff, std::strlen(lhs.str) + 1, lhs.str);
+	strcat_s(buff, std::strlen(rhs.str) + 1, rhs.str);
+	MyString temp{ buff };
+	delete[] buff;
+	return temp;
+}
+
 bool operator<(const MyString& lhs, const MyString &rhs) {
 	return (std::strlen(lhs.str) < std::strlen(rhs.str));
 }
