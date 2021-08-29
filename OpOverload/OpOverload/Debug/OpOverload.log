@@ -1,2 +1,4 @@
 ﻿  MyString.cpp
-  OpOverload.vcxproj -> C:\Users\Richa\source\repos\OpOverload\Debug\OpOverload.exe
+  OpOverload.cpp
+  Generating Code...
+C:\Users\Richa\source\repos\OpOverload\OpOverload\MyString.cpp(141): error C4716: 'operator*=': must return a value

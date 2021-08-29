@@ -138,6 +138,8 @@ MyString operator*=(const MyString& obj, int numOfTimes) {
 
 	MyString temp{ buff };
 	delete[] buff;
+	
+	return temp;
 }
 
 //overloaded insertion operator
