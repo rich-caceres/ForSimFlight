@@ -1,4 +1,2 @@
-﻿  Movie.cpp
-  Movies.cpp
-C:\Users\Richa\source\repos\MovieCollection\MovieCollection\Movies.cpp(33,12): error C2676: binary '<': 'std::istream' does not define this operator or a conversion to a type acceptable to the predefined operator
-  Generating Code...
+﻿  Movies.cpp
+  MovieCollection.vcxproj -> C:\Users\Richa\source\repos\MovieCollection\Debug\MovieCollection.exe
