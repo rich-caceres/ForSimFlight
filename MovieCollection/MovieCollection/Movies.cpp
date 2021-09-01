@@ -27,7 +27,17 @@ void Movies::displayAllMovies() const{
 bool Movies::checkForMatchingName(std::string movieName){
 	for (size_t i = 0; i < movies.size(); ++i) {
 		if (*movies[i].getMovieName() == movieName) {
-			std::cout << "Movie already in collection. Times watched increased by 1.\n";
+			char answer{' '};
+			std::cout << "Movie already in collection.\n";
+			std::cout << "Would you like to change the amount of times watched? enter Y if so. Enter N if you would like to increase by 1.\n";
+			std::cin >> answer;
+			if (answer == 'y') {
+				int numWatched{ 0 };
+				std::cout << "Enter the amount of times watched.\n";
+				std::cin >> numWatched;
+
+				movies[i].setNumWatched(&numWatched);
+			}
 			movies[i].increaseNumWatched();
 			return true;
 		}
