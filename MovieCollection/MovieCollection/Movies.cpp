@@ -31,14 +31,16 @@ bool Movies::checkForMatchingName(std::string movieName){
 			std::cout << "Movie already in collection.\n";
 			std::cout << "Would you like to change the amount of times watched? enter Y if so. Enter N if you would like to increase by 1.\n";
 			std::cin >> answer;
-			if (answer == 'y') {
+			if (tolower(answer) == 'y') {
 				int numWatched{ 0 };
 				std::cout << "Enter the amount of times watched.\n";
 				std::cin >> numWatched;
 
 				movies[i].setNumWatched(&numWatched);
 			}
-			movies[i].increaseNumWatched();
+			else {
+				movies[i].increaseNumWatched();
+			}
 			return true;
 		}
 	}
