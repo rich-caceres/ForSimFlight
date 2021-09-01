@@ -57,15 +57,15 @@ const int *Movie::getNumWatched() const {
 }
 
 void Movie::setMovieName(std::string *movie_name) {
-	this->movie_name = movie_name;
+	*this->movie_name = *movie_name;
 }
 
 void Movie::setMovieRating(std::string *movie_rating) {
-	this->movie_rating = movie_rating;
+	*this->movie_rating = *movie_rating;
 }
 
 void Movie::setNumWatched(int *num_watched) {
-	this->num_watched = num_watched;
+	*this->num_watched = *num_watched;
 }
 
 void Movie::increaseNumWatched() {
