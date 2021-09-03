@@ -98,6 +98,19 @@ MyString operator-(const MyString& obj) {
 	return temp;
 }
 
+MyString operator++(const MyString& obj) {
+	char* buff = new char[std::strlen(obj.str) + 1];
+	strcpy_s(buff, std::strlen(obj.str) + 1, obj.str);
+
+	for (size_t i = 0; i < std::strlen(buff); i++)
+		buff[i] = std::toupper(buff[i]);
+
+	MyString temp{ buff };
+	delete[] buff;
+	return temp;
+
+}
+
 //concat
 MyString operator+(const MyString& lhs, const MyString& rhs) {
 	char* buff = new char[std::strlen(lhs.str) + std::strlen(rhs.str) + 1];
