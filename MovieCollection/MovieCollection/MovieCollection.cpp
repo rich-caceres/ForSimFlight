@@ -17,7 +17,7 @@ int main()
 		char answer;
 		//Movie movie(createMovie());
 		MovieCollection.addMovie(createMovie());
-		std::cout << "Would you like to add another movie? y/n";
+		std::cout << "Would you like to add another movie? y/n" << std::endl;
 		std::cin >> answer;
 		if (answer == 'n') addMovie = false;
 	}
