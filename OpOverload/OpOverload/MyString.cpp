@@ -98,6 +98,7 @@ MyString operator-(const MyString& obj) {
 	return temp;
 }
 
+//make uppercase
 MyString operator++(const MyString& obj) {
 	char* buff = new char[std::strlen(obj.str) + 1];
 	strcpy_s(buff, std::strlen(obj.str) + 1, obj.str);
