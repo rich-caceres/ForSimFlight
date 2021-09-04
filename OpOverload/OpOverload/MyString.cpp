@@ -165,6 +165,17 @@ MyString operator*=(const MyString& obj, int numOfTimes) {
 	return temp;
 }
 
+MyString operator--(const MyString& obj) {
+	
+	char* buff = new char[std::strlen(obj.str) + 1];
+	strcpy_s(buff, std::strlen(obj.str) + 1, obj.str);
+
+	for (int i = 0; i < std::strlen(obj.str) + 1; i++)
+		buff[i] = std::tolower(buff[i]);
+	
+	return obj.str;
+}
+
 //overloaded insertion operator
 std::ostream& operator<<(std::ostream& os, const MyString& rhs) {
 	os << rhs.str;
