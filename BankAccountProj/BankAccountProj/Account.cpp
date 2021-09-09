@@ -22,11 +22,13 @@ void Account::withdraw(double amount) {
 		std::cin >> answer;
 		if (tolower(answer) == 'y') {
 			std::cout << "Your account will be overdrafted!" << std::endl;
+			balance = balance - amount;
 		}
 		else {
 			std::cout << "Withdrawal has been canceled" << std::endl;
 		}
 	}
+	std::cout << "Remaining balance is: " << balance << "." << std::endl;
 }
 
 void Account::deposit(double amount) {
