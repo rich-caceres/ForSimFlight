@@ -1,9 +1,10 @@
 #pragma once
+#include <string>
 class Account
 {
 public:
 	double balance;
-	double amount;
+	std::string name;
 	Account();
 	~Account();
 	void deposit(double amount);

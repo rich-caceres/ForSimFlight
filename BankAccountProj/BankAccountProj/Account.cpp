@@ -3,7 +3,7 @@
 #include "Account.h"
 
 Account::Account()
-	:balance{ 0.0 }, amount{0.0} {
+	:balance{ 0.0 }, name{"NULL"} {
 }
 
 Account::~Account() {
