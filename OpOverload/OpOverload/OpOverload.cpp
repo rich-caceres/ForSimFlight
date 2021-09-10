@@ -10,21 +10,22 @@
 
 int main()
 {
-	MyString empty; //empty string
+	//MyString empty; //empty string
 	MyString rich("Rich");
-	MyString richie(rich);
-	std::cout << std::boolalpha;
-	std::cout << (rich == richie) << std::endl;
-	std::cout << (rich = rich * 3)<<std::endl;
-	std::cout<<(rich *= 3)<<std::endl;
-	rich = MyString{ "RichieRich" };
-	rich.display();
+	//MyString richie(rich);
+	std::cout << (--rich);
+	//std::cout << std::boolalpha;
+	//std::cout << (rich == richie) << std::endl;
+	//std::cout << (rich = rich * 3)<<std::endl;
+	//std::cout<<(rich *= 3)<<std::endl;
+	//rich = MyString{ "RichieRich" };
+	//rich.display();
 	
 
-	richie = rich;
+	//richie = rich;
 
-	empty.display();
-	rich.display();
-	richie.display();
+	//empty.display();
+	//rich.display();
+	//richie.display();
 }
 

@@ -167,13 +167,18 @@ MyString operator*=(const MyString& obj, int numOfTimes) {
 
 MyString operator--(const MyString& obj) {
 	
-	char* buff = new char[std::strlen(obj.str) + 1];
-	strcpy_s(buff, std::strlen(obj.str) + 1, obj.str);
+	char* buff = new char[std::strlen(obj.str)+1];
+	strcpy_s(buff, std::strlen(obj.str)+1, obj.str);
 
-	for (int i = 0; i < std::strlen(obj.str) + 1; i++)
+	for (int i = 0; i < std::strlen(obj.str)-1; i++)
 		buff[i] = std::tolower(buff[i]);
+	buff[std::strlen(obj.str)-1] = '\0';
 	
-	return obj.str;
+	MyString temp{ buff };
+	
+	delete[] buff;
+
+	return temp;
 }
 
 //overloaded insertion operator
