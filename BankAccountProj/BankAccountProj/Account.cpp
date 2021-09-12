@@ -36,5 +36,6 @@ void Account::deposit(double amount) {
 	if (amount > 0) {
 		balance = balance + amount;
 	}
+	std::cout << "Current account balance is " << balance << "." << std::endl;
 }
 
