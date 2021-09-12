@@ -33,5 +33,8 @@ void Account::withdraw(double amount) {
 
 void Account::deposit(double amount) {
 	std::cout << "depositing " << amount << " to account." << std::endl;
+	if (amount > 0) {
+		balance = balance + amount;
+	}
 }
 
