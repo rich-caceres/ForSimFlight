@@ -1,4 +1,14 @@
+#include <iostream>
 #include "SavingsAccount.h"
+
+SavingsAccount::SavingsAccount()
+	:interest_rate{ .06 } {
+	std::cout << "Interest rate has been set too" << interest_rate;
+}
+
+SavingsAccount::~SavingsAccount(){
+	std::cout << "Destructor for Savings account called";
+}
 
 void SavingsAccount::applyInterestRate() {
 
