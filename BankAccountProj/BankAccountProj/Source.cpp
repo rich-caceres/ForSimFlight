@@ -5,6 +5,10 @@
 int main() {
 
 	Account acc;
+	SavingsAccount sav_acc;
+
+	sav_acc.deposit(100.00);
+	sav_acc.applyInterestRate();
 
 	acc.deposit(100.00);
 	acc.withdraw(100.00);
