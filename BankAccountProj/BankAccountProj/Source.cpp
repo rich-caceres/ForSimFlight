@@ -10,10 +10,10 @@ int main() {
 	sav_acc.deposit(100.00);
 	sav_acc.applyInterestRate();
 
-	acc.deposit(100.00);
-	acc.withdraw(100.00);
-	acc.deposit(100.00);
-	acc.withdraw(101.00);
+	//acc.deposit(100.00);
+	//acc.withdraw(100.00);
+	//acc.deposit(100.00);
+	//acc.withdraw(101.00);
 	
 	return 0;
 }
