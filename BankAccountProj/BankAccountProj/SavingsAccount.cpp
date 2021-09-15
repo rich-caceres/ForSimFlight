@@ -7,7 +7,7 @@ SavingsAccount::SavingsAccount()
 }
 
 SavingsAccount::~SavingsAccount(){
-	std::cout << "Destructor for Savings account called";
+	std::cout << "Destructor for Savings account called"<< std::endl;
 }
 
 void SavingsAccount::applyInterestRate() {
