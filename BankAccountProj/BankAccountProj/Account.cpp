@@ -6,7 +6,10 @@ Account::Account()
 	:balance{ 0.0 }, name{"NULL"} {
 }
 
+Account::Account(std::string name, double balance) 
+	: name{ name }, balance{balance} {
 
+}
 
 Account::~Account() {
 
