@@ -8,7 +8,7 @@ Account::Account()
 
 Account::Account(std::string name, double balance) 
 	: name{ name }, balance{balance} {
-
+	std::cout << "You account has been created as " << this->name << " your current balance is " << this->balance << std::endl;
 }
 
 Account::~Account() {
