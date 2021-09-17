@@ -6,6 +6,8 @@ Account::Account()
 	:balance{ 0.0 }, name{"NULL"} {
 }
 
+
+
 Account::~Account() {
 
 }
