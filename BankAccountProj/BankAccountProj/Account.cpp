@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
+#include <ctime>
 #include "Account.h"
 
 Account::Account()
-	:balance{ 0.0 }, name{"NULL"} {
+	:balance{ 0.0 }, name{ "NULL" }, date_created{time(0)} {
 }
 
 Account::Account(std::string name, double balance) 
-	: name{ name }, balance{balance} {
+	: name{ name }, balance{ balance }, date_created{time(0)} {
 	std::cout << "You account has been created as " << this->name << " your current balance is " << this->balance << std::endl;
 }
 
