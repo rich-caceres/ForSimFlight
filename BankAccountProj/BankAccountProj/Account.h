@@ -4,10 +4,14 @@
 
 class Account
 {
-public:
+private:
 	double balance;
 	std::string name;
 	time_t date_created;
+public:
+	void setBalance(double balance);
+	void setName(std::string name);
+	void set_time(time_t date_created);
 	Account();
 	Account(std::string name, double balance);
 	~Account();

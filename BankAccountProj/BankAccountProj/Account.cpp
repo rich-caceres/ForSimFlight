@@ -16,6 +16,18 @@ Account::~Account() {
 
 }
 
+void Account::setBalance(double balance) {
+
+}
+
+void Account::setName(std::string name) {
+
+}
+
+void Account::set_time(time_t date_created) {
+
+}
+
 void Account::withdraw(double amount) {
 	std::cout << "Withdrawing " << amount << " from account." << std::endl;
 	if (amount <= balance) {
