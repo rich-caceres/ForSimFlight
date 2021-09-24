@@ -17,15 +17,15 @@ Account::~Account() {
 }
 
 void Account::setBalance(double balance) {
-
+	this->balance = balance;
 }
 
 void Account::setName(std::string name) {
-
+	this->name = name
 }
 
-void Account::set_time(time_t date_created) {
-
+void Account::set_time() {
+	
 }
 
 void Account::withdraw(double amount) {

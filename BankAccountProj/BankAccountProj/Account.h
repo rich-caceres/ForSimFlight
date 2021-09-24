@@ -11,7 +11,7 @@ private:
 public:
 	void setBalance(double balance);
 	void setName(std::string name);
-	void set_time(time_t date_created);
+	void set_time();
 	Account();
 	Account(std::string name, double balance);
 	~Account();
