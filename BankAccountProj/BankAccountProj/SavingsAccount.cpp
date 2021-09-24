@@ -12,8 +12,9 @@ SavingsAccount::~SavingsAccount(){
 }
 
 void SavingsAccount::applyInterestRate() {
-
-	this->balance = this->balance + (this->balance * interest_rate) ;
-	std::cout << "Balance after applied interest rate is " << balance << std::endl;
-
+	double tempBalance = getBalance();
+	tempBalance = tempBalance + (tempBalance * interest_rate);
+	setBalance(tempBalance);
+	std::cout << "Balance after applied interest rate is " << getBalance() << std::endl;
+	
 }
