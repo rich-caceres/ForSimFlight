@@ -28,6 +28,11 @@ void Account::set_time() {
 	this->date_created = time(0);
 }
 
+double Account::getBalance() {
+	return balance;
+}
+
+
 void Account::withdraw(double amount) {
 	std::cout << "Withdrawing " << amount << " from account." << std::endl;
 	if (amount <= balance) {

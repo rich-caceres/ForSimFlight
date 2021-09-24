@@ -12,6 +12,9 @@ public:
 	void setBalance(double balance);
 	void setName(std::string name);
 	void set_time();
+	double getBalance();
+	std::string getName();
+	time_t get_time();
 	Account();
 	Account(std::string name, double balance);
 	~Account();
