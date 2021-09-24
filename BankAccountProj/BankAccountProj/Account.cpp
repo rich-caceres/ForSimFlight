@@ -21,11 +21,11 @@ void Account::setBalance(double balance) {
 }
 
 void Account::setName(std::string name) {
-	this->name = name
+	this->name = name;
 }
 
 void Account::set_time() {
-	
+	this->date_created = time(0);
 }
 
 void Account::withdraw(double amount) {
