@@ -12,9 +12,11 @@ SavingsAccount::~SavingsAccount(){
 }
 
 void SavingsAccount::applyInterestRate() {
-	double tempBalance = getBalance();
-	tempBalance = tempBalance + (tempBalance * interest_rate);
-	setBalance(tempBalance);
+	double *tempBalance = new double;
+	*tempBalance = getBalance();
+	*tempBalance = *tempBalance + (*tempBalance * interest_rate);
+	setBalance(*tempBalance);
+	delete tempBalance;
 	std::cout << "Balance after applied interest rate is " << getBalance() << std::endl;
 	
 }
