@@ -32,6 +32,13 @@ double Account::getBalance() {
 	return balance;
 }
 
+std::string Account::getName() {
+	return name;
+}
+
+time_t Account::get_time() {
+	return date_created;
+}
 
 void Account::withdraw(double amount) {
 	std::cout << "Withdrawing " << amount << " from account." << std::endl;
