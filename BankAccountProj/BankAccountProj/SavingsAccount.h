@@ -4,8 +4,9 @@
 
 class SavingsAccount : public Account
 {
-public:
+private:
 	double interest_rate;
+public:
 	SavingsAccount();
 	~SavingsAccount();
 	void applyInterestRate();
