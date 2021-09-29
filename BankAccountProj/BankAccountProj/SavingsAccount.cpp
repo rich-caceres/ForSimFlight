@@ -11,6 +11,14 @@ SavingsAccount::~SavingsAccount(){
 	std::cout << "Destructor for Savings account called"<< std::endl;
 }
 
+void SavingsAccount::setInterestRate(double interest_rate) {
+	this->interest_rate = interest_rate;
+}
+
+double SavingsAccount::getInterestRate() {
+	return interest_rate;
+}
+
 void SavingsAccount::applyInterestRate() {
 	double *tempBalance = new double;
 	*tempBalance = getBalance();
