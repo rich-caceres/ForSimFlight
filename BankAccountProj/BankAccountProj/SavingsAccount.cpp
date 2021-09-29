@@ -18,5 +18,4 @@ void SavingsAccount::applyInterestRate() {
 	setBalance(*tempBalance);
 	delete tempBalance;
 	std::cout << "Balance after applied interest rate is " << getBalance() << std::endl;
-	
 }
