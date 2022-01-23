@@ -47,7 +47,7 @@ void Account::withdraw(double amount) {
 		std::cout << "Withdrawing " << amount << " from account." << std::endl;
 	}
 	else {
-		std::cout << "You do not have the required funds and will overdraft your account, do you wish to proceed?"<<std::endl;
+		std::cout << "You do not have the required funds and will overdraft your account, do you wish to proceed? y/n"<<std::endl;
 		char answer{ '\0' };
 		std::cin >> answer;
 		if (tolower(answer) == 'y') {
