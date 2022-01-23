@@ -1,5 +1,5 @@
 #include <iostream>
-#include<ctime>
+#include <ctime>
 #include "SavingsAccount.h"
 
 SavingsAccount::SavingsAccount()
