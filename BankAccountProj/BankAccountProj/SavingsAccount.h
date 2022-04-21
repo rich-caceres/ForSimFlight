@@ -2,6 +2,7 @@
 #include <string>
 #include "Account.h"
 
+//inheriting from account class
 class SavingsAccount : public Account
 {
 private:
