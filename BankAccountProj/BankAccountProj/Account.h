@@ -2,6 +2,7 @@
 #include <string>
 #include <ctime>
 
+//base class that will be used to create savings account as well
 class Account
 {
 private:
