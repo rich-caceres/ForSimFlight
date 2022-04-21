@@ -3,15 +3,18 @@
 #include <ctime>
 #include "Account.h"
 
+//constructor call
 Account::Account()
 	:balance{ 0.0 }, name{ "NULL" }, date_created{time(0)} {
 }
 
+//constructor overload
 Account::Account(std::string name, double balance) 
 	: name{ name }, balance{ balance }, date_created{time(0)} {
 	std::cout << "You account has been created as " << this->name << " your current balance is " << this->balance << std::endl;
 }
 
+//deconstructor
 Account::~Account() {
 
 }
@@ -40,6 +43,7 @@ time_t Account::get_time() {
 	return date_created;
 }
 
+//withdrawal implementation
 void Account::withdraw(double amount) {
 	std::cout << "Withdrawing " << amount << " from account." << std::endl;
 	if (amount <= balance) {
