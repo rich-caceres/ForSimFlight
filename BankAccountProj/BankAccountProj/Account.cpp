@@ -18,7 +18,7 @@ Account::Account(std::string name, double balance)
 Account::~Account() {
 
 }
-
+//setter and getters
 void Account::setBalance(double balance) {
 	this->balance = balance;
 }
@@ -65,6 +65,7 @@ void Account::withdraw(double amount) {
 	std::cout << "Remaining balance is: " << balance << "." << std::endl;
 }
 
+//deposit implementation
 void Account::deposit(double amount) {
 	std::cout << "depositing " << amount << " to account." << std::endl;
 	if (amount > 0) {
