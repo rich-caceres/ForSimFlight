@@ -9,6 +9,8 @@ private:
 	double balance;
 	std::string name;
 	time_t date_created;
+protected:
+	//for protected fuinctions and variables
 public:
 	void setBalance(double balance);
 	void setName(std::string name);
