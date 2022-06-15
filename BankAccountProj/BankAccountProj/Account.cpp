@@ -23,6 +23,10 @@ void Account::setBalance(double balance) {
 	this->balance = balance;
 }
 
+void Account::setInterestRate(double interest_rate) {
+	this->interest_rate = interest_rate;
+}
+
 void Account::setName(std::string name) {
 	this->name = name;
 }

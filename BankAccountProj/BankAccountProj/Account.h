@@ -6,22 +6,24 @@
 class Account
 {
 private:
+	double interest_rate;
 	double balance;
 	std::string name;
 	time_t date_created;
 protected:
 	//for protected fuinctions and variables
 public:
-	void setBalance(double balance);
-	void setName(std::string name);
-	void set_time();
-	double getBalance();
-	std::string getName();
+	virtual void setInterestRate(double interest_rate);
+	virtual void setBalance(double balance);
+	virtual void setName(std::string name);
+	virtual void set_time();
+	virtual double getBalance();
+	virtual std::string getName();
 	time_t get_time();
 	Account();
 	Account(std::string name, double balance);
-	~Account();
-	void deposit(double amount);
-	void withdraw(double amount);
+	virtual ~Account();
+	virtual void deposit(double amount);
+	virtual void withdraw(double amount);
 };
 
