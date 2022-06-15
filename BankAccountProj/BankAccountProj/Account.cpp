@@ -5,12 +5,12 @@
 
 //constructor call
 Account::Account()
-	:balance{ 0.0 }, name{ "NULL" }, date_created{time(0)} {
+	:balance{ 0.0 }, name{ "NULL" }, date_created{ time(0) }, interest_rate{ 0.5 }{
 }
 
 //constructor overload
-Account::Account(std::string name, double balance) 
-	: name{ name }, balance{ balance }, date_created{time(0)} {
+Account::Account(std::string name, double balance, double interest_rate) 
+	: name{ name }, balance{ balance }, interest_rate{ interest_rate }, date_created{ time(0) } {
 	std::cout << "You account has been created as " << this->name << " your current balance is " << this->balance << std::endl;
 }
 

@@ -8,10 +8,10 @@ class SavingsAccount : public Account
 private:
 	double interest_rate;
 public:
-	void setInterestRate(double interest_rate);
+	virtual void setInterestRate(double interest_rate);
 	double getInterestRate();
 	SavingsAccount();
-	~SavingsAccount();
+	virtual ~SavingsAccount();
 	void applyInterestRate();
 };
 

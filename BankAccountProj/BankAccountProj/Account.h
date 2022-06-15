@@ -21,7 +21,7 @@ public:
 	virtual std::string getName();
 	time_t get_time();
 	Account();
-	Account(std::string name, double balance);
+	Account(std::string name, double balance, double interest_rate);
 	virtual ~Account();
 	virtual void deposit(double amount);
 	virtual void withdraw(double amount);
