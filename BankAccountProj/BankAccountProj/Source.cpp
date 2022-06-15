@@ -4,12 +4,15 @@
 
 int main() {
 
-	Account acc;
-	SavingsAccount sav_acc;
+	Account *acc = new Account();
+	Account *sav_acc = new SavingsAccount();
 
-	sav_acc.deposit(100.00);
-	sav_acc.applyInterestRate();
+	sav_acc->deposit(100.00);
+	sav_acc->applyInterestRate();
 	
+	delete sav_acc;
+	delete acc;
+
 	//##TESTING CODE BELOW
 	//acc.deposit(100.00);
 	//acc.withdraw(100.00);

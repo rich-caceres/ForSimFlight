@@ -10,8 +10,6 @@ private:
 public:
 	virtual void setInterestRate(double interest_rate);
 	double getInterestRate();
-	SavingsAccount();
 	virtual ~SavingsAccount();
-	void applyInterestRate();
 };
 

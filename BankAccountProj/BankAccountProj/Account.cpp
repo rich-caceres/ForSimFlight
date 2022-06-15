@@ -69,6 +69,16 @@ void Account::withdraw(double amount) {
 	std::cout << "Remaining balance is: " << balance << "." << std::endl;
 }
 
+//applying the interest, will need to expand to include the time
+void Account::applyInterestRate() {
+	double* tempBalance = new double;
+	*tempBalance = getBalance();
+	*tempBalance = *tempBalance + (*tempBalance * interest_rate);
+	setBalance(*tempBalance);
+	delete tempBalance;
+	std::cout << "Balance after applied interest rate is " << getBalance() << std::endl;
+}
+
 //deposit implementation
 void Account::deposit(double amount) {
 	std::cout << "depositing " << amount << " to account." << std::endl;

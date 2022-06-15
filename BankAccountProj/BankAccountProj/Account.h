@@ -19,6 +19,7 @@ public:
 	virtual void set_time();
 	virtual double getBalance();
 	virtual std::string getName();
+	virtual void applyInterestRate();
 	time_t get_time();
 	Account();
 	Account(std::string name, double balance, double interest_rate);
