@@ -1,10 +1,11 @@
 #pragma once
+#include "I_Printable.h"
 #include <string>
 #include <ctime>
 #include <iostream>
 
 //base class that will be used to create savings account as well
-class Account
+class Account: public I_Printable
 {
 private:
 	double interest_rate;
